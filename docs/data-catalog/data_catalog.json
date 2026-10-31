@@ -1,0 +1,8967 @@
+[
+  {
+    "path": "data/company_id_map.json",
+    "size_kb": 10.88,
+    "last_modified_npt": "2026-10-28T17:00:22.503413+05:45",
+    "root_type": "dict",
+    "row_count": 650,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "NABIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "131"
+      },
+      {
+        "name": "NIMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "132"
+      },
+      {
+        "name": "SCB",
+        "type": "int",
+        "null_count": 0,
+        "example": "133"
+      },
+      {
+        "name": "HBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "134"
+      },
+      {
+        "name": "SBI",
+        "type": "int",
+        "null_count": 0,
+        "example": "135"
+      },
+      {
+        "name": "NBB",
+        "type": "int",
+        "null_count": 0,
+        "example": "136"
+      },
+      {
+        "name": "EBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "137"
+      },
+      {
+        "name": "BOKL",
+        "type": "int",
+        "null_count": 0,
+        "example": "138"
+      },
+      {
+        "name": "NICA",
+        "type": "int",
+        "null_count": 0,
+        "example": "139"
+      },
+      {
+        "name": "MBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "140"
+      },
+      {
+        "name": "LSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "141"
+      },
+      {
+        "name": "KBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "142"
+      },
+      {
+        "name": "LUBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "143"
+      },
+      {
+        "name": "NCCB",
+        "type": "int",
+        "null_count": 0,
+        "example": "144"
+      },
+      {
+        "name": "SBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "145"
+      },
+      {
+        "name": "YHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "146"
+      },
+      {
+        "name": "SHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "147"
+      },
+      {
+        "name": "TRH",
+        "type": "int",
+        "null_count": 0,
+        "example": "148"
+      },
+      {
+        "name": "OHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "149"
+      },
+      {
+        "name": "ESC",
+        "type": "int",
+        "null_count": 0,
+        "example": "150"
+      },
+      {
+        "name": "NFD",
+        "type": "int",
+        "null_count": 0,
+        "example": "151"
+      },
+      {
+        "name": "NHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "152"
+      },
+      {
+        "name": "BPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "153"
+      },
+      {
+        "name": "CHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "154"
+      },
+      {
+        "name": "STC",
+        "type": "int",
+        "null_count": 0,
+        "example": "155"
+      },
+      {
+        "name": "BBC",
+        "type": "int",
+        "null_count": 0,
+        "example": "156"
+      },
+      {
+        "name": "NBCK",
+        "type": "int",
+        "null_count": 0,
+        "example": "157"
+      },
+      {
+        "name": "NTL",
+        "type": "int",
+        "null_count": 0,
+        "example": "158"
+      },
+      {
+        "name": "NWC",
+        "type": "int",
+        "null_count": 0,
+        "example": "159"
+      },
+      {
+        "name": "NIDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "160"
+      },
+      {
+        "name": "NDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "161"
+      },
+      {
+        "name": "GRAND",
+        "type": "int",
+        "null_count": 0,
+        "example": "162"
+      },
+      {
+        "name": "NUBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "163"
+      },
+      {
+        "name": "CBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "164"
+      },
+      {
+        "name": "PDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "165"
+      },
+      {
+        "name": "DDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "166"
+      },
+      {
+        "name": "GDBL1",
+        "type": "int",
+        "null_count": 0,
+        "example": "167"
+      },
+      {
+        "name": "BUDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "168"
+      },
+      {
+        "name": "SDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "169"
+      },
+      {
+        "name": "BBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "170"
+      },
+      {
+        "name": "SANIMA",
+        "type": "int",
+        "null_count": 0,
+        "example": "171"
+      },
+      {
+        "name": "NABBC",
+        "type": "int",
+        "null_count": 0,
+        "example": "172"
+      },
+      {
+        "name": "BBBLN",
+        "type": "int",
+        "null_count": 0,
+        "example": "173"
+      },
+      {
+        "name": "SBBLJ",
+        "type": "int",
+        "null_count": 0,
+        "example": "174"
+      },
+      {
+        "name": "GDBNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "175"
+      },
+      {
+        "name": "NICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "176"
+      },
+      {
+        "name": "RBCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "177"
+      },
+      {
+        "name": "NLICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "178"
+      },
+      {
+        "name": "HEI",
+        "type": "int",
+        "null_count": 0,
+        "example": "179"
+      },
+      {
+        "name": "UAIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "180"
+      },
+      {
+        "name": "EIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "181"
+      },
+      {
+        "name": "SPIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "182"
+      },
+      {
+        "name": "NIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "183"
+      },
+      {
+        "name": "PRIN",
+        "type": "int",
+        "null_count": 0,
+        "example": "184"
+      },
+      {
+        "name": "SALICO",
+        "type": "int",
+        "null_count": 0,
+        "example": "185"
+      },
+      {
+        "name": "IGI",
+        "type": "int",
+        "null_count": 0,
+        "example": "186"
+      },
+      {
+        "name": "NLIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "187"
+      },
+      {
+        "name": "LICN",
+        "type": "int",
+        "null_count": 0,
+        "example": "188"
+      },
+      {
+        "name": "PICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "189"
+      },
+      {
+        "name": "LGIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "190"
+      },
+      {
+        "name": "SICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "192"
+      },
+      {
+        "name": "MSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "193"
+      },
+      {
+        "name": "NFS",
+        "type": "int",
+        "null_count": 0,
+        "example": "194"
+      },
+      {
+        "name": "BNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "195"
+      },
+      {
+        "name": "NCM",
+        "type": "int",
+        "null_count": 0,
+        "example": "196"
+      },
+      {
+        "name": "BJM",
+        "type": "int",
+        "null_count": 0,
+        "example": "197"
+      },
+      {
+        "name": "NLO",
+        "type": "int",
+        "null_count": 0,
+        "example": "198"
+      },
+      {
+        "name": "NNFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "199"
+      },
+      {
+        "name": "NSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "200"
+      },
+      {
+        "name": "NVG",
+        "type": "int",
+        "null_count": 0,
+        "example": "201"
+      },
+      {
+        "name": "KBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "202"
+      },
+      {
+        "name": "RJM",
+        "type": "int",
+        "null_count": 0,
+        "example": "203"
+      },
+      {
+        "name": "GUFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "204"
+      },
+      {
+        "name": "BSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "205"
+      },
+      {
+        "name": "PFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "206"
+      },
+      {
+        "name": "GRU",
+        "type": "int",
+        "null_count": 0,
+        "example": "207"
+      },
+      {
+        "name": "UFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "208"
+      },
+      {
+        "name": "JSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "209"
+      },
+      {
+        "name": "CIT",
+        "type": "int",
+        "null_count": 0,
+        "example": "210"
+      },
+      {
+        "name": "AVU",
+        "type": "int",
+        "null_count": 0,
+        "example": "211"
+      },
+      {
+        "name": "NABB",
+        "type": "int",
+        "null_count": 0,
+        "example": "212"
+      },
+      {
+        "name": "BNT",
+        "type": "int",
+        "null_count": 0,
+        "example": "213"
+      },
+      {
+        "name": "NFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "214"
+      },
+      {
+        "name": "HBT",
+        "type": "int",
+        "null_count": 0,
+        "example": "215"
+      },
+      {
+        "name": "ACEDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "216"
+      },
+      {
+        "name": "BSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "217"
+      },
+      {
+        "name": "YFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "218"
+      },
+      {
+        "name": "UNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "219"
+      },
+      {
+        "name": "GFLK",
+        "type": "int",
+        "null_count": 0,
+        "example": "220"
+      },
+      {
+        "name": "SFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "221"
+      },
+      {
+        "name": "NKU",
+        "type": "int",
+        "null_count": 0,
+        "example": "222"
+      },
+      {
+        "name": "UFLK",
+        "type": "int",
+        "null_count": 0,
+        "example": "223"
+      },
+      {
+        "name": "HTL",
+        "type": "int",
+        "null_count": 0,
+        "example": "224"
+      },
+      {
+        "name": "NHMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "225"
+      },
+      {
+        "name": "SBPP",
+        "type": "int",
+        "null_count": 0,
+        "example": "226"
+      },
+      {
+        "name": "BFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "227"
+      },
+      {
+        "name": "FHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "228"
+      },
+      {
+        "name": "MFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "229"
+      },
+      {
+        "name": "SRS",
+        "type": "int",
+        "null_count": 0,
+        "example": "230"
+      },
+      {
+        "name": "LFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "231"
+      },
+      {
+        "name": "GFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "232"
+      },
+      {
+        "name": "NBBU",
+        "type": "int",
+        "null_count": 0,
+        "example": "233"
+      },
+      {
+        "name": "PFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "234"
+      },
+      {
+        "name": "HDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "235"
+      },
+      {
+        "name": "PFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "236"
+      },
+      {
+        "name": "LFLC",
+        "type": "int",
+        "null_count": 0,
+        "example": "237"
+      },
+      {
+        "name": "NMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "238"
+      },
+      {
+        "name": "SFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "239"
+      },
+      {
+        "name": "AEFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "240"
+      },
+      {
+        "name": "NBFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "241"
+      },
+      {
+        "name": "UFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "242"
+      },
+      {
+        "name": "ILFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "243"
+      },
+      {
+        "name": "SIFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "244"
+      },
+      {
+        "name": "CFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "245"
+      },
+      {
+        "name": "NSLMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "246"
+      },
+      {
+        "name": "PFCLL",
+        "type": "int",
+        "null_count": 0,
+        "example": "247"
+      },
+      {
+        "name": "NDFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "248"
+      },
+      {
+        "name": "SYFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "249"
+      },
+      {
+        "name": "JFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "250"
+      },
+      {
+        "name": "STFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "251"
+      },
+      {
+        "name": "OFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "252"
+      },
+      {
+        "name": "CMBF",
+        "type": "int",
+        "null_count": 0,
+        "example": "253"
+      },
+      {
+        "name": "FFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "254"
+      },
+      {
+        "name": "PRVU",
+        "type": "int",
+        "null_count": 0,
+        "example": "255"
+      },
+      {
+        "name": "SFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "256"
+      },
+      {
+        "name": "BJFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "257"
+      },
+      {
+        "name": "EFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "258"
+      },
+      {
+        "name": "CMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "259"
+      },
+      {
+        "name": "PFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "260"
+      },
+      {
+        "name": "SFFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "261"
+      },
+      {
+        "name": "APEX",
+        "type": "int",
+        "null_count": 0,
+        "example": "262"
+      },
+      {
+        "name": "GMFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "263"
+      },
+      {
+        "name": "IMEFI",
+        "type": "int",
+        "null_count": 0,
+        "example": "264"
+      },
+      {
+        "name": "BFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "265"
+      },
+      {
+        "name": "PFLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "266"
+      },
+      {
+        "name": "SUPRME",
+        "type": "int",
+        "null_count": 0,
+        "example": "267"
+      },
+      {
+        "name": "SWBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "268"
+      },
+      {
+        "name": "NCMMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "269"
+      },
+      {
+        "name": "IFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "270"
+      },
+      {
+        "name": "SODBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "271"
+      },
+      {
+        "name": "CMBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "272"
+      },
+      {
+        "name": "ICFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "273"
+      },
+      {
+        "name": "EDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "274"
+      },
+      {
+        "name": "MLBL1",
+        "type": "int",
+        "null_count": 0,
+        "example": "275"
+      },
+      {
+        "name": "EBLCP",
+        "type": "int",
+        "null_count": 0,
+        "example": "277"
+      },
+      {
+        "name": "NEFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "278"
+      },
+      {
+        "name": "BLDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "279"
+      },
+      {
+        "name": "SIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "280"
+      },
+      {
+        "name": "IDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "290"
+      },
+      {
+        "name": "CEFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "296"
+      },
+      {
+        "name": "NTC",
+        "type": "int",
+        "null_count": 0,
+        "example": "307"
+      },
+      {
+        "name": "PRBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "308"
+      },
+      {
+        "name": "DBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "311"
+      },
+      {
+        "name": "LBFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "320"
+      },
+      {
+        "name": "SAFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "321"
+      },
+      {
+        "name": "SUBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "331"
+      },
+      {
+        "name": "KAFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "332"
+      },
+      {
+        "name": "CEDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "336"
+      },
+      {
+        "name": "TBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "337"
+      },
+      {
+        "name": "PROFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "338"
+      },
+      {
+        "name": "PGBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "340"
+      },
+      {
+        "name": "GBIME",
+        "type": "int",
+        "null_count": 0,
+        "example": "341"
+      },
+      {
+        "name": "REDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "342"
+      },
+      {
+        "name": "AXIS",
+        "type": "int",
+        "null_count": 0,
+        "example": "344"
+      },
+      {
+        "name": "SBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "345"
+      },
+      {
+        "name": "CZBIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "348"
+      },
+      {
+        "name": "BOAN",
+        "type": "int",
+        "null_count": 0,
+        "example": "349"
+      },
+      {
+        "name": "AFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "356"
+      },
+      {
+        "name": "PCBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "357"
+      },
+      {
+        "name": "LBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "358"
+      },
+      {
+        "name": "SRBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "359"
+      },
+      {
+        "name": "AHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "360"
+      },
+      {
+        "name": "CFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "361"
+      },
+      {
+        "name": "MGBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "364"
+      },
+      {
+        "name": "PDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "367"
+      },
+      {
+        "name": "MBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "370"
+      },
+      {
+        "name": "MDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "371"
+      },
+      {
+        "name": "PBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "383"
+      },
+      {
+        "name": "RBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "384"
+      },
+      {
+        "name": "ALICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "385"
+      },
+      {
+        "name": "KDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "388"
+      },
+      {
+        "name": "SEWA",
+        "type": "int",
+        "null_count": 0,
+        "example": "389"
+      },
+      {
+        "name": "HLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "393"
+      },
+      {
+        "name": "NGBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "394"
+      },
+      {
+        "name": "NMLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "396"
+      },
+      {
+        "name": "ADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "397"
+      },
+      {
+        "name": "ODBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "398"
+      },
+      {
+        "name": "MLBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "401"
+      },
+      {
+        "name": "SJLIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "403"
+      },
+      {
+        "name": "UBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "405"
+      },
+      {
+        "name": "ALDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "406"
+      },
+      {
+        "name": "SDFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "407"
+      },
+      {
+        "name": "ZFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "408"
+      },
+      {
+        "name": "SMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "409"
+      },
+      {
+        "name": "SLFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "411"
+      },
+      {
+        "name": "GSDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "412"
+      },
+      {
+        "name": "UFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "413"
+      },
+      {
+        "name": "PRDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "414"
+      },
+      {
+        "name": "SETI",
+        "type": "int",
+        "null_count": 0,
+        "example": "416"
+      },
+      {
+        "name": "GBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "417"
+      },
+      {
+        "name": "JBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "418"
+      },
+      {
+        "name": "KNBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "419"
+      },
+      {
+        "name": "GDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "420"
+      },
+      {
+        "name": "HATH",
+        "type": "int",
+        "null_count": 0,
+        "example": "421"
+      },
+      {
+        "name": "KEBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "427"
+      },
+      {
+        "name": "KRBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "428"
+      },
+      {
+        "name": "HFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "441"
+      },
+      {
+        "name": "TNBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "442"
+      },
+      {
+        "name": "ARDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "443"
+      },
+      {
+        "name": "VFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "444"
+      },
+      {
+        "name": "WDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "445"
+      },
+      {
+        "name": "PRBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "446"
+      },
+      {
+        "name": "GLICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "447"
+      },
+      {
+        "name": "CNDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "448"
+      },
+      {
+        "name": "CORBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "450"
+      },
+      {
+        "name": "PURBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "451"
+      },
+      {
+        "name": "KSBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "459"
+      },
+      {
+        "name": "RARA",
+        "type": "int",
+        "null_count": 0,
+        "example": "460"
+      },
+      {
+        "name": "HAMA",
+        "type": "int",
+        "null_count": 0,
+        "example": "470"
+      },
+      {
+        "name": "MPFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "471"
+      },
+      {
+        "name": "SADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "472"
+      },
+      {
+        "name": "SHINE",
+        "type": "int",
+        "null_count": 0,
+        "example": "473"
+      },
+      {
+        "name": "MNBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "474"
+      },
+      {
+        "name": "BHBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "487"
+      },
+      {
+        "name": "BGDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "489"
+      },
+      {
+        "name": "FMDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "490"
+      },
+      {
+        "name": "JBNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "496"
+      },
+      {
+        "name": "SMFDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "502"
+      },
+      {
+        "name": "TDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "503"
+      },
+      {
+        "name": "GULMI",
+        "type": "int",
+        "null_count": 0,
+        "example": "504"
+      },
+      {
+        "name": "KADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "505"
+      },
+      {
+        "name": "NCDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "506"
+      },
+      {
+        "name": "PADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "512"
+      },
+      {
+        "name": "METRO",
+        "type": "int",
+        "null_count": 0,
+        "example": "513"
+      },
+      {
+        "name": "RDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "514"
+      },
+      {
+        "name": "MFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "516"
+      },
+      {
+        "name": "NBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "517"
+      },
+      {
+        "name": "SIGS1",
+        "type": "int",
+        "null_count": 0,
+        "example": "526"
+      },
+      {
+        "name": "INDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "529"
+      },
+      {
+        "name": "KKBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "531"
+      },
+      {
+        "name": "CBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "532"
+      },
+      {
+        "name": "CIVIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "533"
+      },
+      {
+        "name": "BRTBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "535"
+      },
+      {
+        "name": "INDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "536"
+      },
+      {
+        "name": "KHDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "537"
+      },
+      {
+        "name": "NBF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "538"
+      },
+      {
+        "name": "CTBNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "539"
+      },
+      {
+        "name": "SLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "545"
+      },
+      {
+        "name": "NLG",
+        "type": "int",
+        "null_count": 0,
+        "example": "559"
+      },
+      {
+        "name": "SINDU",
+        "type": "int",
+        "null_count": 0,
+        "example": "561"
+      },
+      {
+        "name": "MEGA",
+        "type": "int",
+        "null_count": 0,
+        "example": "562"
+      },
+      {
+        "name": "JHBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "563"
+      },
+      {
+        "name": "MIDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "570"
+      },
+      {
+        "name": "NBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "571"
+      },
+      {
+        "name": "GABL",
+        "type": "int",
+        "null_count": 0,
+        "example": "572"
+      },
+      {
+        "name": "SKBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "574"
+      },
+      {
+        "name": "RMDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "575"
+      },
+      {
+        "name": "HAMRO",
+        "type": "int",
+        "null_count": 0,
+        "example": "576"
+      },
+      {
+        "name": "JEFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "577"
+      },
+      {
+        "name": "GBLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "583"
+      },
+      {
+        "name": "RLFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "587"
+      },
+      {
+        "name": "MSBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "588"
+      },
+      {
+        "name": "SHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "591"
+      },
+      {
+        "name": "NSLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "592"
+      },
+      {
+        "name": "KMCDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "593"
+      },
+      {
+        "name": "MTBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "595"
+      },
+      {
+        "name": "NCDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "598"
+      },
+      {
+        "name": "CSDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "600"
+      },
+      {
+        "name": "MLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "601"
+      },
+      {
+        "name": "NBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "602"
+      },
+      {
+        "name": "CCBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "605"
+      },
+      {
+        "name": "TRHPR",
+        "type": "int",
+        "null_count": 0,
+        "example": "608"
+      },
+      {
+        "name": "RIDI",
+        "type": "int",
+        "null_count": 0,
+        "example": "610"
+      },
+      {
+        "name": "MMDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "614"
+      },
+      {
+        "name": "SEOS",
+        "type": "int",
+        "null_count": 0,
+        "example": "616"
+      },
+      {
+        "name": "EKBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "617"
+      },
+      {
+        "name": "LLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "618"
+      },
+      {
+        "name": "SHBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "625"
+      },
+      {
+        "name": "KCDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "627"
+      },
+      {
+        "name": "NMBSF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "629"
+      },
+      {
+        "name": "NIBSF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "636"
+      },
+      {
+        "name": "LVF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "674"
+      },
+      {
+        "name": "RBBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "679"
+      },
+      {
+        "name": "BFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "680"
+      },
+      {
+        "name": "MMFDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "682"
+      },
+      {
+        "name": "BARUN",
+        "type": "int",
+        "null_count": 0,
+        "example": "686"
+      },
+      {
+        "name": "VLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "687"
+      },
+      {
+        "name": "MSMBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "691"
+      },
+      {
+        "name": "SBLD78",
+        "type": "int",
+        "null_count": 0,
+        "example": "692"
+      },
+      {
+        "name": "HLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "693"
+      },
+      {
+        "name": "MATRI",
+        "type": "int",
+        "null_count": 0,
+        "example": "694"
+      },
+      {
+        "name": "JSLBB",
+        "type": "int",
+        "null_count": 0,
+        "example": "695"
+      },
+      {
+        "name": "API",
+        "type": "int",
+        "null_count": 0,
+        "example": "697"
+      },
+      {
+        "name": "NMBMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "704"
+      },
+      {
+        "name": "GILB",
+        "type": "int",
+        "null_count": 0,
+        "example": "705"
+      },
+      {
+        "name": "SWMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "706"
+      },
+      {
+        "name": "SKDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "1733"
+      },
+      {
+        "name": "SAJHA",
+        "type": "int",
+        "null_count": 0,
+        "example": "1735"
+      },
+      {
+        "name": "GIMES1",
+        "type": "int",
+        "null_count": 0,
+        "example": "1740"
+      },
+      {
+        "name": "MERO",
+        "type": "int",
+        "null_count": 0,
+        "example": "1741"
+      },
+      {
+        "name": "HIDCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2742"
+      },
+      {
+        "name": "NGPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2743"
+      },
+      {
+        "name": "GRDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2744"
+      },
+      {
+        "name": "NMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2746"
+      },
+      {
+        "name": "RSDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2748"
+      },
+      {
+        "name": "SLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2750"
+      },
+      {
+        "name": "KKHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2751"
+      },
+      {
+        "name": "NMBHF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "2752"
+      },
+      {
+        "name": "NEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2753"
+      },
+      {
+        "name": "DHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2754"
+      },
+      {
+        "name": "NIBLPF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2755"
+      },
+      {
+        "name": "AKPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2757"
+      },
+      {
+        "name": "FOWAD",
+        "type": "int",
+        "null_count": 0,
+        "example": "2758"
+      },
+      {
+        "name": "SPDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2759"
+      },
+      {
+        "name": "UMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2760"
+      },
+      {
+        "name": "SMATA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2761"
+      },
+      {
+        "name": "SDESI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2764"
+      },
+      {
+        "name": "LEMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2765"
+      },
+      {
+        "name": "CHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2766"
+      },
+      {
+        "name": "HPPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2767"
+      },
+      {
+        "name": "MSLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2768"
+      },
+      {
+        "name": "NHDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2769"
+      },
+      {
+        "name": "SEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2770"
+      },
+      {
+        "name": "SMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2771"
+      },
+      {
+        "name": "SAEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2773"
+      },
+      {
+        "name": "USLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2774"
+      },
+      {
+        "name": "RADHI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2776"
+      },
+      {
+        "name": "AMFI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2777"
+      },
+      {
+        "name": "NICGF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2779"
+      },
+      {
+        "name": "CMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "2780"
+      },
+      {
+        "name": "WNLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2781"
+      },
+      {
+        "name": "RRHP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2783"
+      },
+      {
+        "name": "NADEP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2784"
+      },
+      {
+        "name": "PMHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2786"
+      },
+      {
+        "name": "KPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2787"
+      },
+      {
+        "name": "AKJCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2788"
+      },
+      {
+        "name": "JOSHI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2789"
+      },
+      {
+        "name": "ACLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2790"
+      },
+      {
+        "name": "UPPER",
+        "type": "int",
+        "null_count": 0,
+        "example": "2792"
+      },
+      {
+        "name": "SLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2804"
+      },
+      {
+        "name": "GHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2806"
+      },
+      {
+        "name": "ALBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2807"
+      },
+      {
+        "name": "SHIVM",
+        "type": "int",
+        "null_count": 0,
+        "example": "2809"
+      },
+      {
+        "name": "UPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2810"
+      },
+      {
+        "name": "MHNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2811"
+      },
+      {
+        "name": "SPARS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2812"
+      },
+      {
+        "name": "PPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2813"
+      },
+      {
+        "name": "GMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2815"
+      },
+      {
+        "name": "NAGRO",
+        "type": "int",
+        "null_count": 0,
+        "example": "2816"
+      },
+      {
+        "name": "HURJA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2824"
+      },
+      {
+        "name": "NICAD85/86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2825"
+      },
+      {
+        "name": "GLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2826"
+      },
+      {
+        "name": "SAND2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2828"
+      },
+      {
+        "name": "SMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2829"
+      },
+      {
+        "name": "UNHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2831"
+      },
+      {
+        "name": "ILBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2832"
+      },
+      {
+        "name": "SRD80",
+        "type": "int",
+        "null_count": 0,
+        "example": "2834"
+      },
+      {
+        "name": "NBF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "2835"
+      },
+      {
+        "name": "GBD80/81",
+        "type": "int",
+        "null_count": 0,
+        "example": "2840"
+      },
+      {
+        "name": "RHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2841"
+      },
+      {
+        "name": "SJCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2842"
+      },
+      {
+        "name": "SABSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2843"
+      },
+      {
+        "name": "AKBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2845"
+      },
+      {
+        "name": "NMBD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2850"
+      },
+      {
+        "name": "NIBD2082",
+        "type": "int",
+        "null_count": 0,
+        "example": "2851"
+      },
+      {
+        "name": "GGBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2852"
+      },
+      {
+        "name": "NBBD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2854"
+      },
+      {
+        "name": "TMDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2855"
+      },
+      {
+        "name": "SIGS2",
+        "type": "int",
+        "null_count": 0,
+        "example": "2859"
+      },
+      {
+        "name": "SAPDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2860"
+      },
+      {
+        "name": "CMF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "2862"
+      },
+      {
+        "name": "NICBF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2863"
+      },
+      {
+        "name": "SBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2864"
+      },
+      {
+        "name": "MBLD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2866"
+      },
+      {
+        "name": "NMB50",
+        "type": "int",
+        "null_count": 0,
+        "example": "2867"
+      },
+      {
+        "name": "NICD83/84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2868"
+      },
+      {
+        "name": "NICAD8283",
+        "type": "int",
+        "null_count": 0,
+        "example": "2869"
+      },
+      {
+        "name": "BOKD2079",
+        "type": "int",
+        "null_count": 0,
+        "example": "2870"
+      },
+      {
+        "name": "EBLD2078",
+        "type": "int",
+        "null_count": 0,
+        "example": "2871"
+      },
+      {
+        "name": "SBLD2082",
+        "type": "int",
+        "null_count": 0,
+        "example": "2872"
+      },
+      {
+        "name": "HBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2873"
+      },
+      {
+        "name": "PBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2875"
+      },
+      {
+        "name": "SFMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2877"
+      },
+      {
+        "name": "SRBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2878"
+      },
+      {
+        "name": "LBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2879"
+      },
+      {
+        "name": "HDHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2880"
+      },
+      {
+        "name": "NRIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2881"
+      },
+      {
+        "name": "ICFCD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2882"
+      },
+      {
+        "name": "GWFD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2883"
+      },
+      {
+        "name": "KBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2885"
+      },
+      {
+        "name": "ADBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2886"
+      },
+      {
+        "name": "NICLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2887"
+      },
+      {
+        "name": "CIZBD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2889"
+      },
+      {
+        "name": "SBIBD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2890"
+      },
+      {
+        "name": "NBLD82",
+        "type": "int",
+        "null_count": 0,
+        "example": "2892"
+      },
+      {
+        "name": "AIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2893"
+      },
+      {
+        "name": "NICAD8182",
+        "type": "int",
+        "null_count": 0,
+        "example": "2895"
+      },
+      {
+        "name": "SMPDA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2896"
+      },
+      {
+        "name": "NRN",
+        "type": "int",
+        "null_count": 0,
+        "example": "2898"
+      },
+      {
+        "name": "RLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2900"
+      },
+      {
+        "name": "LUK",
+        "type": "int",
+        "null_count": 0,
+        "example": "2902"
+      },
+      {
+        "name": "LEC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2903"
+      },
+      {
+        "name": "PBLD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2904"
+      },
+      {
+        "name": "GIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2905"
+      },
+      {
+        "name": "SSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2907"
+      },
+      {
+        "name": "SGIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2908"
+      },
+      {
+        "name": "SBLD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2912"
+      },
+      {
+        "name": "MEN",
+        "type": "int",
+        "null_count": 0,
+        "example": "2913"
+      },
+      {
+        "name": "UMRH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2914"
+      },
+      {
+        "name": "PMLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2915"
+      },
+      {
+        "name": "CGH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2917"
+      },
+      {
+        "name": "NIFRA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2919"
+      },
+      {
+        "name": "SBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "2922"
+      },
+      {
+        "name": "SLCF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2923"
+      },
+      {
+        "name": "GLH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2924"
+      },
+      {
+        "name": "MLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2925"
+      },
+      {
+        "name": "JLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2929"
+      },
+      {
+        "name": "NIBD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2931"
+      },
+      {
+        "name": "MFLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "2932"
+      },
+      {
+        "name": "KEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2933"
+      },
+      {
+        "name": "SHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2934"
+      },
+      {
+        "name": "RURU",
+        "type": "int",
+        "null_count": 0,
+        "example": "2935"
+      },
+      {
+        "name": "NCCD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2936"
+      },
+      {
+        "name": "SBCF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2937"
+      },
+      {
+        "name": "CHDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "3946"
+      },
+      {
+        "name": "PSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "4947"
+      },
+      {
+        "name": "KSBBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4948"
+      },
+      {
+        "name": "NIBSF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "4949"
+      },
+      {
+        "name": "JBLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "4951"
+      },
+      {
+        "name": "MKLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "4955"
+      },
+      {
+        "name": "ULI",
+        "type": "int",
+        "null_count": 0,
+        "example": "4956"
+      },
+      {
+        "name": "NBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4959"
+      },
+      {
+        "name": "ADBLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "4960"
+      },
+      {
+        "name": "BOKD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "4961"
+      },
+      {
+        "name": "PBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4962"
+      },
+      {
+        "name": "NMBD87/88",
+        "type": "int",
+        "null_count": 0,
+        "example": "4963"
+      },
+      {
+        "name": "NMBEB92/93",
+        "type": "int",
+        "null_count": 0,
+        "example": "4964"
+      },
+      {
+        "name": "SAMAJ",
+        "type": "int",
+        "null_count": 0,
+        "example": "4965"
+      },
+      {
+        "name": "NICSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "4967"
+      },
+      {
+        "name": "RMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "4968"
+      },
+      {
+        "name": "MND84/85",
+        "type": "int",
+        "null_count": 0,
+        "example": "4969"
+      },
+      {
+        "name": "SRLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "5982"
+      },
+      {
+        "name": "LBLD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "5984"
+      },
+      {
+        "name": "PBD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "6984"
+      },
+      {
+        "name": "SDBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "6985"
+      },
+      {
+        "name": "MBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "7985"
+      },
+      {
+        "name": "NICD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "7986"
+      },
+      {
+        "name": "RBBD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "8003"
+      },
+      {
+        "name": "GBILD86/87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8004"
+      },
+      {
+        "name": "MKJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8005"
+      },
+      {
+        "name": "MLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8018"
+      },
+      {
+        "name": "JBBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8020"
+      },
+      {
+        "name": "SAHAS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8021"
+      },
+      {
+        "name": "TPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8022"
+      },
+      {
+        "name": "MMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "8023"
+      },
+      {
+        "name": "NBF3",
+        "type": "int",
+        "null_count": 0,
+        "example": "8024"
+      },
+      {
+        "name": "SPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8025"
+      },
+      {
+        "name": "NYADI",
+        "type": "int",
+        "null_count": 0,
+        "example": "8026"
+      },
+      {
+        "name": "NBLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8027"
+      },
+      {
+        "name": "ADBLB86",
+        "type": "int",
+        "null_count": 0,
+        "example": "8029"
+      },
+      {
+        "name": "ADBLB87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8030"
+      },
+      {
+        "name": "MBJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8031"
+      },
+      {
+        "name": "BNHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8032"
+      },
+      {
+        "name": "GBBD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8033"
+      },
+      {
+        "name": "ENL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8034"
+      },
+      {
+        "name": "RULB",
+        "type": "int",
+        "null_count": 0,
+        "example": "8036"
+      },
+      {
+        "name": "JALPA",
+        "type": "int",
+        "null_count": 0,
+        "example": "8038"
+      },
+      {
+        "name": "NESDO",
+        "type": "int",
+        "null_count": 0,
+        "example": "8041"
+      },
+      {
+        "name": "CBLD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8043"
+      },
+      {
+        "name": "EBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "8044"
+      },
+      {
+        "name": "GVL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8045"
+      },
+      {
+        "name": "BHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8055"
+      },
+      {
+        "name": "ULBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8063"
+      },
+      {
+        "name": "CYCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8065"
+      },
+      {
+        "name": "RFPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8066"
+      },
+      {
+        "name": "CCBD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8068"
+      },
+      {
+        "name": "DORDI",
+        "type": "int",
+        "null_count": 0,
+        "example": "8070"
+      },
+      {
+        "name": "ADLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "8071"
+      },
+      {
+        "name": "NICFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8073"
+      },
+      {
+        "name": "KDBY",
+        "type": "int",
+        "null_count": 0,
+        "example": "8074"
+      },
+      {
+        "name": "BHDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8075"
+      },
+      {
+        "name": "HHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8076"
+      },
+      {
+        "name": "PBD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8097"
+      },
+      {
+        "name": "SBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8098"
+      },
+      {
+        "name": "UHEWA",
+        "type": "int",
+        "null_count": 0,
+        "example": "8099"
+      },
+      {
+        "name": "SGHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8100"
+      },
+      {
+        "name": "MHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8102"
+      },
+      {
+        "name": "USHEC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8104"
+      },
+      {
+        "name": "NMBUR93/94",
+        "type": "int",
+        "null_count": 0,
+        "example": "8105"
+      },
+      {
+        "name": "GIBF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "8106"
+      },
+      {
+        "name": "RHGCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8108"
+      },
+      {
+        "name": "SBD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8109"
+      },
+      {
+        "name": "SBID83",
+        "type": "int",
+        "null_count": 0,
+        "example": "8110"
+      },
+      {
+        "name": "PBD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "8116"
+      },
+      {
+        "name": "AVYAN",
+        "type": "int",
+        "null_count": 0,
+        "example": "8117"
+      },
+      {
+        "name": "EBLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8119"
+      },
+      {
+        "name": "SPHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8121"
+      },
+      {
+        "name": "PPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8122"
+      },
+      {
+        "name": "DLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8123"
+      },
+      {
+        "name": "NSIF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "8125"
+      },
+      {
+        "name": "SIKLES",
+        "type": "int",
+        "null_count": 0,
+        "example": "8126"
+      },
+      {
+        "name": "KBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8127"
+      },
+      {
+        "name": "KLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8128"
+      },
+      {
+        "name": "EHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8131"
+      },
+      {
+        "name": "SHLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "8132"
+      },
+      {
+        "name": "PHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8133"
+      },
+      {
+        "name": "BHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9135"
+      },
+      {
+        "name": "BOKD86KA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9136"
+      },
+      {
+        "name": "HBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "9137"
+      },
+      {
+        "name": "NIBLGF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9138"
+      },
+      {
+        "name": "SAGF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9139"
+      },
+      {
+        "name": "UNLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "9140"
+      },
+      {
+        "name": "NIFRAUR85/86",
+        "type": "int",
+        "null_count": 0,
+        "example": "9141"
+      },
+      {
+        "name": "SMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9146"
+      },
+      {
+        "name": "SPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9147"
+      },
+      {
+        "name": "SMH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9148"
+      },
+      {
+        "name": "MKHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9149"
+      },
+      {
+        "name": "AHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9150"
+      },
+      {
+        "name": "KDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9151"
+      },
+      {
+        "name": "EBLEB89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9152"
+      },
+      {
+        "name": "SFEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9154"
+      },
+      {
+        "name": "TAMOR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9156"
+      },
+      {
+        "name": "MHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9158"
+      },
+      {
+        "name": "SMJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9159"
+      },
+      {
+        "name": "ANLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "9161"
+      },
+      {
+        "name": "BPW",
+        "type": "int",
+        "null_count": 0,
+        "example": "9163"
+      },
+      {
+        "name": "MAKAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9166"
+      },
+      {
+        "name": "MKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9167"
+      },
+      {
+        "name": "GBILD84/85",
+        "type": "int",
+        "null_count": 0,
+        "example": "9168"
+      },
+      {
+        "name": "DOLTI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9170"
+      },
+      {
+        "name": "BEDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9171"
+      },
+      {
+        "name": "CITY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9173"
+      },
+      {
+        "name": "PRSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9174"
+      },
+      {
+        "name": "MCHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9175"
+      },
+      {
+        "name": "IHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9176"
+      },
+      {
+        "name": "SCBD",
+        "type": "int",
+        "null_count": 0,
+        "example": "9177"
+      },
+      {
+        "name": "RMF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9178"
+      },
+      {
+        "name": "MEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9179"
+      },
+      {
+        "name": "NMBD89/90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9180"
+      },
+      {
+        "name": "RAWA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9181"
+      },
+      {
+        "name": "SIGS3",
+        "type": "int",
+        "null_count": 0,
+        "example": "9182"
+      },
+      {
+        "name": "NRM",
+        "type": "int",
+        "null_count": 0,
+        "example": "9183"
+      },
+      {
+        "name": "ILI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9184"
+      },
+      {
+        "name": "C30MF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9191"
+      },
+      {
+        "name": "USHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9192"
+      },
+      {
+        "name": "GCIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9193"
+      },
+      {
+        "name": "TSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9194"
+      },
+      {
+        "name": "MLBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9195"
+      },
+      {
+        "name": "KBSH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9196"
+      },
+      {
+        "name": "LBBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9197"
+      },
+      {
+        "name": "LVF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9198"
+      },
+      {
+        "name": "RNLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9199"
+      },
+      {
+        "name": "SNLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9201"
+      },
+      {
+        "name": "MEHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9203"
+      },
+      {
+        "name": "ULHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9208"
+      },
+      {
+        "name": "CLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9209"
+      },
+      {
+        "name": "SBID89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9211"
+      },
+      {
+        "name": "MANDU",
+        "type": "int",
+        "null_count": 0,
+        "example": "9212"
+      },
+      {
+        "name": "HATHY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9213"
+      },
+      {
+        "name": "BGWT",
+        "type": "int",
+        "null_count": 0,
+        "example": "9214"
+      },
+      {
+        "name": "MSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9215"
+      },
+      {
+        "name": "SONA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9216"
+      },
+      {
+        "name": "MMKJL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9217"
+      },
+      {
+        "name": "TVCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9218"
+      },
+      {
+        "name": "KBLD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9220"
+      },
+      {
+        "name": "H8020",
+        "type": "int",
+        "null_count": 0,
+        "example": "9221"
+      },
+      {
+        "name": "VLUCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9225"
+      },
+      {
+        "name": "MKCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9230"
+      },
+      {
+        "name": "CIZBD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9231"
+      },
+      {
+        "name": "CKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9232"
+      },
+      {
+        "name": "NWCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9233"
+      },
+      {
+        "name": "HRL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9234"
+      },
+      {
+        "name": "NICGF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9236"
+      },
+      {
+        "name": "NABILD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "9238"
+      },
+      {
+        "name": "KSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9241"
+      },
+      {
+        "name": "SARBTM",
+        "type": "int",
+        "null_count": 0,
+        "example": "9242"
+      },
+      {
+        "name": "NIMBD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9243"
+      },
+      {
+        "name": "NIBLSTF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9244"
+      },
+      {
+        "name": "MNMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "9245"
+      },
+      {
+        "name": "GMLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9246"
+      },
+      {
+        "name": "GSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9248"
+      },
+      {
+        "name": "ICFCD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "9249"
+      },
+      {
+        "name": "NMIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9250"
+      },
+      {
+        "name": "CREST",
+        "type": "int",
+        "null_count": 0,
+        "example": "9252"
+      },
+      {
+        "name": "NMBHF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9254"
+      },
+      {
+        "name": "EBLD91",
+        "type": "int",
+        "null_count": 0,
+        "example": "9255"
+      },
+      {
+        "name": "OMPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9256"
+      },
+      {
+        "name": "MBLEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9257"
+      },
+      {
+        "name": "PURE",
+        "type": "int",
+        "null_count": 0,
+        "example": "9258"
+      },
+      {
+        "name": "RSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9259"
+      },
+      {
+        "name": "NIFRAGED",
+        "type": "int",
+        "null_count": 0,
+        "example": "9261"
+      },
+      {
+        "name": "TTL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9262"
+      },
+      {
+        "name": "SANVI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9263"
+      },
+      {
+        "name": "RBBD2088",
+        "type": "int",
+        "null_count": 0,
+        "example": "9264"
+      },
+      {
+        "name": "NICAD2091",
+        "type": "int",
+        "null_count": 0,
+        "example": "9266"
+      },
+      {
+        "name": "BHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9267"
+      },
+      {
+        "name": "GBIMESY2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9269"
+      },
+      {
+        "name": "HIMSTAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9270"
+      },
+      {
+        "name": "SBLD2091",
+        "type": "int",
+        "null_count": 0,
+        "example": "9271"
+      },
+      {
+        "name": "SHINED",
+        "type": "int",
+        "null_count": 0,
+        "example": "9286"
+      },
+      {
+        "name": "MABEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9287"
+      },
+      {
+        "name": "SBID2090",
+        "type": "int",
+        "null_count": 0,
+        "example": "9289"
+      },
+      {
+        "name": "HLICF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9290"
+      },
+      {
+        "name": "DHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9293"
+      },
+      {
+        "name": "SAGAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9294"
+      },
+      {
+        "name": "SWASTIK",
+        "type": "int",
+        "null_count": 0,
+        "example": "9295"
+      },
+      {
+        "name": "BUNGAL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9296"
+      },
+      {
+        "name": "BANDIPUR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9297"
+      },
+      {
+        "name": "NABILD2089",
+        "type": "int",
+        "null_count": 0,
+        "example": "9299"
+      },
+      {
+        "name": "JHAPA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9300"
+      },
+      {
+        "name": "SAIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9301"
+      },
+      {
+        "name": "RBBF40",
+        "type": "int",
+        "null_count": 0,
+        "example": "9302"
+      },
+      {
+        "name": "SYPNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9303"
+      },
+      {
+        "name": "CSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9304"
+      },
+      {
+        "name": "SABBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9305"
+      },
+      {
+        "name": "RSML",
+        "type": "int",
+        "null_count": 0,
+        "example": "9306"
+      },
+      {
+        "name": "HFIN",
+        "type": "int",
+        "null_count": 0,
+        "example": "9308"
+      },
+      {
+        "name": "SOHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9311"
+      },
+      {
+        "name": "NSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9312"
+      },
+      {
+        "name": "BJHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9322"
+      },
+      {
+        "name": "SKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9323"
+      },
+      {
+        "name": "RLEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9324"
+      },
+      {
+        "name": "SKHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9325"
+      },
+      {
+        "name": "NABILPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9326"
+      },
+      {
+        "name": "ICFCD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9327"
+      },
+      {
+        "name": "KSBBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9328"
+      },
+      {
+        "name": "SIPD",
+        "type": "int",
+        "null_count": 0,
+        "example": "9329"
+      },
+      {
+        "name": "PCIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9330"
+      },
+      {
+        "name": "SBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9331"
+      },
+      {
+        "name": "NMBPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9332"
+      },
+      {
+        "name": "SANIMAPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9333"
+      },
+      {
+        "name": "KHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9334"
+      },
+      {
+        "name": "MBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9335"
+      },
+      {
+        "name": "SOPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9336"
+      },
+      {
+        "name": "APHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9337"
+      },
+      {
+        "name": "YMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9342"
+      },
+      {
+        "name": "TPKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9343"
+      },
+      {
+        "name": "SNORL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9344"
+      },
+      {
+        "name": "SGHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9345"
+      },
+      {
+        "name": "KAHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9346"
+      },
+      {
+        "name": "ECL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9347"
+      },
+      {
+        "name": "SEF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9348"
+      },
+      {
+        "name": "SAEF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9349"
+      },
+      {
+        "name": "LSH12",
+        "type": "int",
+        "null_count": 0,
+        "example": "9350"
+      },
+      {
+        "name": "RSY2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9351"
+      },
+      {
+        "name": "MEPDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9352"
+      },
+      {
+        "name": "SAPIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9353"
+      },
+      {
+        "name": "PBD93",
+        "type": "int",
+        "null_count": 0,
+        "example": "9354"
+      },
+      {
+        "name": "LSD92",
+        "type": "int",
+        "null_count": 0,
+        "example": "9355"
+      },
+      {
+        "name": "BENH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9356"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "unused",
+    "status": "OK"
+  },
+  {
+    "path": "data/company_list.json",
+    "size_kb": 240.55,
+    "last_modified_npt": "2026-10-28T17:00:22.300716+05:45",
+    "root_type": "list",
+    "row_count": 650,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "131"
+      },
+      {
+        "name": "companyName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Nabil Bank Limited"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "NABIL"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Nabil Bank Limited"
+      },
+      {
+        "name": "status",
+        "type": "str",
+        "null_count": 0,
+        "example": "A"
+      },
+      {
+        "name": "companyEmail",
+        "type": "str",
+        "null_count": 0,
+        "example": "company.affairs@nabilbank.com"
+      },
+      {
+        "name": "website",
+        "type": "str",
+        "null_count": 0,
+        "example": "www.nabilbank.com"
+      },
+      {
+        "name": "sectorName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Commercial Banks"
+      },
+      {
+        "name": "regulatoryBody",
+        "type": "str",
+        "null_count": 0,
+        "example": "Nepal Rastra Bank"
+      },
+      {
+        "name": "instrumentType",
+        "type": "str",
+        "null_count": 0,
+        "example": "Equity"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/daily_bank_subindex_graph.json",
+    "size_kb": 24.37,
+    "last_modified_npt": "2026-10-28T17:00:22.934205+05:45",
+    "root_type": "list",
+    "row_count": 610,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 1554.92]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_development_bank_subindex_graph.json",
+    "size_kb": 23.16,
+    "last_modified_npt": "2026-10-28T17:00:22.964135+05:45",
+    "root_type": "list",
+    "row_count": 580,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 5428.5]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_finance_subindex_graph.json",
+    "size_kb": 22.43,
+    "last_modified_npt": "2026-10-28T17:00:22.979976+05:45",
+    "root_type": "list",
+    "row_count": 561,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 2186.27]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_float_index_graph.json",
+    "size_kb": 23.82,
+    "last_modified_npt": "2026-10-28T17:00:22.903714+05:45",
+    "root_type": "list",
+    "row_count": 611,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 181.82]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_hotel_tourism_subindex_graph.json",
+    "size_kb": 23.03,
+    "last_modified_npt": "2026-10-28T17:00:23.003366+05:45",
+    "root_type": "list",
+    "row_count": 576,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 6877.12]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_hydro_subindex_graph.json",
+    "size_kb": 24.42,
+    "last_modified_npt": "2026-10-28T17:00:23.023401+05:45",
+    "root_type": "list",
+    "row_count": 611,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 3628.88]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_investment_subindex_graph.json",
+    "size_kb": 21.9,
+    "last_modified_npt": "2026-10-28T17:00:23.042040+05:45",
+    "root_type": "list",
+    "row_count": 576,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 94.14]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_life_insurance_subindex_graph.json",
+    "size_kb": 24.44,
+    "last_modified_npt": "2026-10-28T17:00:23.062602+05:45",
+    "root_type": "list",
+    "row_count": 597,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 11815.26]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_manufacturing_subindex_graph.json",
+    "size_kb": 24.92,
+    "last_modified_npt": "2026-10-28T17:00:23.085292+05:45",
+    "root_type": "list",
+    "row_count": 609,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 10603.41]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_microfinance_subindex_graph.json",
+    "size_kb": 24.01,
+    "last_modified_npt": "2026-10-28T17:00:23.103447+05:45",
+    "root_type": "list",
+    "row_count": 601,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 4480.27]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_mutualfund_subindex_graph.json",
+    "size_kb": 18.63,
+    "last_modified_npt": "2026-10-28T17:00:23.121179+05:45",
+    "root_type": "list",
+    "row_count": 490,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 19.84]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_nepse_index_graph.json",
+    "size_kb": 24.41,
+    "last_modified_npt": "2026-10-28T17:00:22.870127+05:45",
+    "root_type": "list",
+    "row_count": 611,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 2626.86]"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_non_life_insurance_subindex_graph.json",
+    "size_kb": 20.79,
+    "last_modified_npt": "2026-10-28T17:00:23.141866+05:45",
+    "root_type": "list",
+    "row_count": 520,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 9504.37]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_others_subindex_graph.json",
+    "size_kb": 22.65,
+    "last_modified_npt": "2026-10-28T17:00:23.144893+05:45",
+    "root_type": "list",
+    "row_count": 567,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 1771.65]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_sensitive_float_index_graph.json",
+    "size_kb": 23.8,
+    "last_modified_npt": "2026-10-28T17:00:22.930340+05:45",
+    "root_type": "list",
+    "row_count": 610,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 160.37]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_sensitive_index_graph.json",
+    "size_kb": 23.67,
+    "last_modified_npt": "2026-10-28T17:00:22.892423+05:45",
+    "root_type": "list",
+    "row_count": 610,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 474.62]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/daily_trading_subindex_graph.json",
+    "size_kb": 15.08,
+    "last_modified_npt": "2026-10-28T17:00:23.176833+05:45",
+    "root_type": "list",
+    "row_count": 380,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "(list elements)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[1793163900, 3215.06]"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "DUPLICATE_ROWS (dup_timestamps:369)"
+  },
+  {
+    "path": "data/debentures_bonds.json",
+    "size_kb": 23.32,
+    "last_modified_npt": "2026-10-28T17:00:22.835575+05:45",
+    "root_type": "list",
+    "row_count": 78,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "84"
+      },
+      {
+        "name": "debentureName",
+        "type": "str",
+        "null_count": 0,
+        "example": "7% Laxmi Sunrise Debenture 2092"
+      },
+      {
+        "name": "debentureSymbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "LSD92"
+      },
+      {
+        "name": "couponRate",
+        "type": "str",
+        "null_count": 0,
+        "example": "7% "
+      },
+      {
+        "name": "listingDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2093-06-07"
+      },
+      {
+        "name": "totalUnits",
+        "type": "float",
+        "null_count": 0,
+        "example": "3000000.0"
+      },
+      {
+        "name": "maturityDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2093-04-31"
+      },
+      {
+        "name": "searchName",
+        "type": "str",
+        "null_count": 0,
+        "example": "(LSD92) 7% Laxmi Sunrise Debenture 2092"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/fetch_summary.json",
+    "size_kb": 0.11,
+    "last_modified_npt": "2026-10-28T17:00:23.178843+05:45",
+    "root_type": "dict",
+    "row_count": 4,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "last_fast",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "last_full",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28T11:15:23.178557+00:00"
+      },
+      {
+        "name": "errors",
+        "type": "dict",
+        "null_count": 0,
+        "example": "{}"
+      },
+      {
+        "name": "files",
+        "type": "int",
+        "null_count": 0,
+        "example": "42"
+      }
+    ],
+    "source_method_writes": "unverified",
+    "refresh_tier": "unverified",
+    "frontend_use": "unused",
+    "status": "OK"
+  },
+  {
+    "path": "data/holiday_list.json",
+    "size_kb": 7.35,
+    "last_modified_npt": "2026-10-28T11:55:57.713401+05:45",
+    "root_type": "list",
+    "row_count": 46,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "instrumentTypeId",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "holidayDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2025-12-30"
+      },
+      {
+        "name": "holidayDescription",
+        "type": "str",
+        "null_count": 0,
+        "example": "Tamu Lhosar"
+      },
+      {
+        "name": "activeStatus",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      }
+    ],
+    "source_method_writes": "unverified",
+    "refresh_tier": "unverified",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/holiday_list_2026.json",
+    "size_kb": 6.38,
+    "last_modified_npt": "2026-10-28T17:00:22.819516+05:45",
+    "root_type": "list",
+    "row_count": 40,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "instrumentTypeId",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "holidayDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-12-30"
+      },
+      {
+        "name": "holidayDescription",
+        "type": "str",
+        "null_count": 0,
+        "example": "Tamu Lhosar"
+      },
+      {
+        "name": "activeStatus",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      }
+    ],
+    "source_method_writes": "unverified",
+    "refresh_tier": "unverified",
+    "frontend_use": "unused",
+    "status": "OK"
+  },
+  {
+    "path": "data/live_market.json",
+    "size_kb": 0.0,
+    "last_modified_npt": "2026-10-28T17:00:21.659894+05:45",
+    "root_type": "list",
+    "row_count": 0,
+    "row_count_info": {},
+    "fields": [],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "EMPTY"
+  },
+  {
+    "path": "data/market_status.json",
+    "size_kb": 0.07,
+    "last_modified_npt": "2026-10-28T17:00:21.612737+05:45",
+    "root_type": "dict",
+    "row_count": 3,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "isOpen",
+        "type": "str",
+        "null_count": 0,
+        "example": "CLOSE"
+      },
+      {
+        "name": "asOf",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28T15:00:00"
+      },
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "80"
+      }
+    ],
+    "source_method_writes": "collect_fast/collect_all_live/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/nepse_index.json",
+    "size_kb": 1.56,
+    "last_modified_npt": "2026-10-28T17:00:21.634408+05:45",
+    "root_type": "list",
+    "row_count": 4,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "57"
+      },
+      {
+        "name": "auditId",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "exchangeIndexId",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "generatedTime",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28T15:20:31.94"
+      },
+      {
+        "name": "index",
+        "type": "str",
+        "null_count": 0,
+        "example": "Sensitive Index"
+      },
+      {
+        "name": "close",
+        "type": "float",
+        "null_count": 0,
+        "example": "475.47"
+      },
+      {
+        "name": "high",
+        "type": "float",
+        "null_count": 0,
+        "example": "481.7997"
+      },
+      {
+        "name": "low",
+        "type": "float",
+        "null_count": 0,
+        "example": "474.6201"
+      },
+      {
+        "name": "previousClose",
+        "type": "float",
+        "null_count": 0,
+        "example": "481.7997"
+      },
+      {
+        "name": "change",
+        "type": "float",
+        "null_count": 0,
+        "example": "6.32"
+      },
+      {
+        "name": "perChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "1.33"
+      },
+      {
+        "name": "fiftyTwoWeekHigh",
+        "type": "float",
+        "null_count": 0,
+        "example": "507.0"
+      },
+      {
+        "name": "fiftyTwoWeekLow",
+        "type": "float",
+        "null_count": 0,
+        "example": "439.44"
+      },
+      {
+        "name": "currentValue",
+        "type": "float",
+        "null_count": 0,
+        "example": "481.79"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/nepse_notice.json",
+    "size_kb": 33.37,
+    "last_modified_npt": "2026-10-28T17:00:22.808797+05:45",
+    "root_type": "wrapped paginated dict with \"content\"",
+    "row_count": 50,
+    "row_count_info": {
+      "content_len": 50,
+      "totalElements": 216,
+      "totalPages": 5
+    },
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "1247"
+      },
+      {
+        "name": "noticeHeading",
+        "type": "str",
+        "null_count": 0,
+        "example": "बोलपत्र स्वीकृत गर्ने आशयको सूचना"
+      },
+      {
+        "name": "noticeBody",
+        "type": "str",
+        "null_count": 0,
+        "example": "नेप्सेको भवन तथा सम्पत्तिको सूरक्षा सम्बन्धि कार्य गर्नको ला..."
+      },
+      {
+        "name": "noticeExpiryDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-11-02"
+      },
+      {
+        "name": "noticeFilePath",
+        "type": "str",
+        "null_count": 0,
+        "example": "79c284d44a2a0875a908daf43c76a332.pdf"
+      },
+      {
+        "name": "feature",
+        "type": "bool",
+        "null_count": 0,
+        "example": "True"
+      },
+      {
+        "name": "publishToWebsite",
+        "type": "bool",
+        "null_count": 0,
+        "example": "True"
+      },
+      {
+        "name": "noticeTypeId",
+        "type": "dict",
+        "null_count": 0,
+        "example": "{'id': 3, 'activeStatus': 'A', 'noticeType': 'Circular Notice'}"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/press_release.json",
+    "size_kb": 18.1,
+    "last_modified_npt": "2026-10-28T17:00:22.787739+05:45",
+    "root_type": "wrapped paginated dict with \"content\"",
+    "row_count": 21,
+    "row_count_info": {
+      "content_len": 21,
+      "totalElements": 21,
+      "totalPages": 1
+    },
+    "fields": [
+      {
+        "name": "(array of arrays)",
+        "type": "list",
+        "null_count": 0,
+        "example": "[{'noticeHeading': 'निलम्बन गरिएको बारे |', 'noticeBody': 'निलम्बन गरिएको बारे |"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/price_volume.json",
+    "size_kb": 80.31,
+    "last_modified_npt": "2026-10-28T17:00:21.787392+05:45",
+    "root_type": "list",
+    "row_count": 279,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "securityId",
+        "type": "str",
+        "null_count": 0,
+        "example": "2790"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Aarambha Chautari Laghubitta Bittiya Sanstha Limited"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "ACLBSL"
+      },
+      {
+        "name": "indexId",
+        "type": "int",
+        "null_count": 0,
+        "example": "58"
+      },
+      {
+        "name": "totalTradeQuantity",
+        "type": "int",
+        "null_count": 0,
+        "example": "1169"
+      },
+      {
+        "name": "lastTradedPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      },
+      {
+        "name": "percentageChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "0.950118765"
+      },
+      {
+        "name": "previousClose",
+        "type": "float",
+        "null_count": 0,
+        "example": "842.0"
+      },
+      {
+        "name": "closePrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/price_volume_history.json",
+    "size_kb": 225.38,
+    "last_modified_npt": "2026-10-28T17:00:21.892466+05:45",
+    "root_type": "wrapped paginated dict with \"content\"",
+    "row_count": 348,
+    "row_count_info": {
+      "content_len": 348,
+      "totalElements": 348,
+      "totalPages": 1
+    },
+    "fields": [
+      {
+        "name": "id",
+        "type": "NoneType",
+        "null_count": 1,
+        "example": "None"
+      },
+      {
+        "name": "businessDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28"
+      },
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "2790"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "ACLBSL"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Aarambha Chautari Laghubitta Bittiya Sanstha Limited"
+      },
+      {
+        "name": "openPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "845.0"
+      },
+      {
+        "name": "highPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      },
+      {
+        "name": "lowPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "843.0"
+      },
+      {
+        "name": "closePrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      },
+      {
+        "name": "totalTradedQuantity",
+        "type": "int",
+        "null_count": 0,
+        "example": "1169"
+      },
+      {
+        "name": "totalTradedValue",
+        "type": "float",
+        "null_count": 0,
+        "example": "988217.5"
+      },
+      {
+        "name": "previousDayClosePrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "842.0"
+      },
+      {
+        "name": "fiftyTwoWeekHigh",
+        "type": "float",
+        "null_count": 0,
+        "example": "1095.0"
+      },
+      {
+        "name": "fiftyTwoWeekLow",
+        "type": "float",
+        "null_count": 0,
+        "example": "827.9"
+      },
+      {
+        "name": "lastUpdatedTime",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28T14:58:54.682257"
+      },
+      {
+        "name": "lastUpdatedPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      },
+      {
+        "name": "totalTrades",
+        "type": "int",
+        "null_count": 0,
+        "example": "20"
+      },
+      {
+        "name": "averageTradedPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "845.35"
+      },
+      {
+        "name": "marketCapitalization",
+        "type": "float",
+        "null_count": 0,
+        "example": "3120.72"
+      }
+    ],
+    "source_method_writes": "collect_all_live/Collector.collect_slow",
+    "refresh_tier": "full (15 min)/slow",
+    "frontend_use": "unused",
+    "status": "OK"
+  },
+  {
+    "path": "data/sector_scrips.json",
+    "size_kb": 8.11,
+    "last_modified_npt": "2026-10-28T17:00:22.621973+05:45",
+    "root_type": "dict",
+    "row_count": 14,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "Hydro Power",
+        "type": "list",
+        "null_count": 0,
+        "example": "['USHL', 'AKJCL', 'API', 'APHL', 'AKPL', 'AHPC', 'AHL', 'BHL', 'BHPL', 'BARUN', 'BENH', 'BGWT', 'BEDC', 'BJHL', 'BHCL', 'BHDC', 'BNHC', 'BUNGAL', 'BPCL', 'CHL', 'CHCL', 'CKHL', 'DHEL', 'DHPL', 'DOLTI', 'DORDI', 'EHPL', 'GHL', 'GVL', 'GLH', 'HDHPC', 'HURJA', 'HHL', 'HPPL', 'HIMSTAR', 'IHL', 'JOSHI', 'KAHL', 'KPCL', 'KHPL', 'KKHC', 'KBSH', 'LEC', 'MABEL', 'MBJC', 'MKHL', 'MKJC', 'MAKAR', 'MEHL', 'MHL', 'MANDU', 'MMKJL', 'MKHC', 'MCHL', 'MSHL', 'MEL', 'MHCL', 'MEPDL', 'MEN', 'MHNL', 'NHPC', 'NHDL', 'NGPL', 'NYADI', 'PMHPL', 'PPCL', 'PHCL', 'PPL', 'RADHI', 'RHGCL', 'RHPL', 'RAWA', 'RLEL', 'RIDI', 'RFPL', 'RURU', 'SMJC', 'SAHAS', 'SPC', 'SGHL', 'SHPC', 'TAMOR', 'SJCL', 'SANVI', 'SPHL', 'SIPD', 'SSHL', 'SPL', 'SIKLES', 'SHEL', 'SNORL', 'SOHL', 'SKHL', 'SMHL', 'SMH', 'SKHEL', 'SGHC', 'SPDL', 'TPKHL', 'TPC', 'TSHL', 'TVCL', 'UNHPL', 'UMRH', 'UMHL', 'UPCL', 'UHEWA', 'ULHC', 'USHEC', 'UPPER', 'VLUCL', 'YMHL']"
+      },
+      {
+        "name": "Microfinance",
+        "type": "list",
+        "null_count": 0,
+        "example": "['ACLBSL', 'ANLB', 'ALBSL', 'AVYAN', 'CBBL', 'CYCL', 'DDBL', 'DLBS', 'FMDBL', 'FOWAD', 'GMFBS', 'GILB', 'GBLBS', 'GLBSL', 'HLBSL', 'ILBS', 'JSLBB', 'JBLB', 'KMCDB', 'LLBS', 'MLBSL', 'MSLB', 'MLBS', 'MATRI', 'MERO', 'MLBBL', 'NADEP', 'NMFBS', 'NMLBBL', 'NESDO', 'NICLBSL', 'NUBL', 'NMBMF', 'RSDC', 'SMATA', 'SMPDA', 'SLBSL', 'SKBBL', 'SHLB', 'SMB', 'SWMF', 'SWBBL', 'SMFBS', 'SLBBL', 'SWASTIK', 'UNLB', 'USLB', 'ULBSL', 'VLBS', 'WNLB']"
+      },
+      {
+        "name": "Promoter Share",
+        "type": "list",
+        "null_count": 0,
+        "example": "['ACLBSLP', 'ANLBP', 'ALBSLP', 'ALICLP', 'AVYANP', 'BFCPO', 'CFCLPO', 'CBBLPO', 'CITPO', 'CLIP', 'CZBILP', 'PSDBLP', 'CORBLP', 'CRESTP', 'CYCLP', 'DDBLPO', 'EBLPO', 'EDBLPO', 'FMDBLP', 'FOWADP', 'GMFBSP', 'GBBLPO', 'GBIMEP', 'GILBPO', 'GFCLPO', 'PDBLPO', 'GBLBSP', 'GRDBLP', 'GMLIP', 'GMFILP', 'GUFLPO', 'HBLPO', 'HEIP', 'HLBSLP', 'HLIPO', 'HRLP', 'HIDCLP', 'ILIP', 'ICFCPO', 'IGIPO', 'ILBSP', 'JFLPO', 'JSLBBP', 'JBLBP', 'JBBLPO', 'KMCDBP', 'KSBBLP', 'KRBLPO', 'KBLPO', 'LLBSPO', 'LSLPO', 'LICNPO', 'LBBLPO', 'MBLPO', 'MLBLPO', 'MDBLPO', 'MLBSLP', 'MSLBP', 'MFILPO', 'MLBSP', 'MATRIP', 'MEROPO', 'MDBPO', 'MLBBLP', 'MNBBLP', 'MPFLPO', 'NABILP', 'NADEPP', 'NABBCP', 'NMFBSP', 'NLICLP', 'NILPO', 'NBLP', 'NFSPO', 'NIFRAP', 'NICLPO', 'NIMBPO', 'NLICP', 'NMICP', 'NRICP', 'SBIPO', 'NSMPO', 'NMLBBLP', 'NESDOP', 'NICAP', 'NICLBSLP', 'NUBLPO', 'NLGPO', 'NMBMFP', 'NMBPO', 'PFLPO', 'PRFLPO', 'PRVUPO', 'PRINPO', 'PMLIP', 'PCBLP', 'PROFLP', 'RBCLPO', 'RNLIP', 'RLFLPO', 'RSDCP', 'SABSLPO', 'SALICOPO', 'SABBLP', 'SMATAP', 'SMPDAP', 'SLBSLPO', 'SKBBLP', 'SNMAPO', 'SGICP', 'SRLIP', 'SAPDBLP', 'SADBLP', 'SICLPO', 'SHINEP', 'SIFCPO', 'SHLBP', 'SBLPO', 'SPILPO', 'SINDUP', 'SCBPO', 'SNLIP', 'SMBPO', 'SJLICP', 'SWMFPO', 'SWBBLP', 'SMFBSP', 'SLBBLP', 'SWASTIKP', 'UNLBP', 'UAILPO', 'USLBP', 'ULBSLPO', 'VLBSPO', 'WNLBP']"
+      },
+      {
+        "name": "Commercial Banks",
+        "type": "list",
+        "null_count": 0,
+        "example": "['ADBL', 'ADBLD83', 'ADBLB', 'ADBLB86', 'ADBLB87', 'BOKD86KA', 'BOKD86', 'CCBD88', 'C30MF', 'CSY', 'CIZBD90', 'CZBIL', 'CIZBD86', 'CBLD88', 'EBL', 'EBLD85', 'EBLD86', 'EBLEB89', 'EBLD91', 'GBIME', 'GBIMESY2', 'GBILD86/87', 'GBILD84/85', 'HBLD86', 'H8020', 'HBL', 'KBLD86', 'KEF', 'KBL', 'KBLD90', 'KSY', 'KBLD89', 'KDBY', 'LBLD88', 'LVF2', 'LSH12', 'LSD92', 'LSL', 'SFMF', 'LBLD86', 'MBLD2085', 'MBL', 'MBLEF', 'MBLPNP', 'MBLD87', 'MMF1', 'NABIL', 'NBF2', 'NBLD82', 'NBF3', 'NBLD85', 'NABILD87', 'NABILD2089', 'NABILPNP', 'NBBD2085', 'NBL', 'NBLD87', 'NCCD86', 'NIMBD90', 'NIBLSTF', 'NIBD84', 'NIBSF2', 'NIMB', 'SBI', 'SBIBD86', 'SBID2090', 'SBID89', 'SBID83', 'NICD88', 'NICFC', 'NICGF2', 'NICAD2091', 'NICA', 'NICAD85/86', 'NMB', 'NMBD2085', 'NMBHF2', 'NMBPNP', 'NMBD87/88', 'NMBEB92/93', 'NMBUR93/94', 'NMBD89/90', 'PRVU', 'PBLD86', 'PBLD84', 'PSF', 'PBLD87', 'PCBL', 'PBD93', 'PBD85', 'PBD84', 'PBD88', 'RBBD83', 'RBBD2088', 'SANIMA', 'SAND2085', 'SBD87', 'SLCF', 'SANIMAPNP', 'SAEF2', 'SBD89', 'SBLD84', 'SIGS2', 'SEF', 'SBL', 'SBLD89', 'SIGS3', 'SBLD2091', 'SEF2', 'SBLPNP', 'SCB', 'SCBD', 'SBCF', 'SRBLD83', 'SFEF']"
+      },
+      {
+        "name": "Manufacturing And Processing",
+        "type": "list",
+        "null_count": 0,
+        "example": "['AVU', 'BSL', 'BNL', 'BNT', 'BSM', 'ECL', 'FHL', 'GCIL', 'GRU', 'HBT', 'HDL', 'JSM', 'NBBU', 'NKU', 'NLO', 'NVG', 'OMPL', 'PCIL', 'RJM', 'RSML', 'SAGAR', 'SARBTM', 'SAPIL', 'SHIVM', 'SBPP', 'SRS', 'SAIL', 'SONA', 'SOPL', 'SYPNL', 'UNL']"
+      },
+      {
+        "name": "Life Insurance",
+        "type": "list",
+        "null_count": 0,
+        "example": "['ALICL', 'CLI', 'CREST', 'GMLI', 'HLI', 'HLICF', 'ILI', 'LICN', 'NLICL', 'NLIC', 'NSY', 'PMLI', 'RSY', 'RSY2', 'RNLI', 'SRLI', 'SNLI', 'SJLIC']"
+      },
+      {
+        "name": "Hotels And Tourism",
+        "type": "list",
+        "null_count": 0,
+        "example": "['BANDIPUR', 'CGH', 'CITY', 'HFIN', 'KDL', 'OHL', 'SHL', 'TRH', 'YHL']"
+      },
+      {
+        "name": "Finance",
+        "type": "list",
+        "null_count": 0,
+        "example": "['BFC', 'CMB', 'CFCL', 'CFL', 'GFCL', 'GWFD83', 'GMFIL', 'GUFL', 'HFL', 'ICFC', 'ICFCD83', 'ICFCD88', 'ICFCD89', 'JFL', 'MFLD85', 'MFIL', 'MPFL', 'NFS', 'NSM', 'PFL', 'PROFL', 'RLFL', 'SFC', 'SIFC']"
+      },
+      {
+        "name": "Tradings",
+        "type": "list",
+        "null_count": 0,
+        "example": "['BBC', 'NTL', 'NWC', 'STC']"
+      },
+      {
+        "name": "Investment",
+        "type": "list",
+        "null_count": 0,
+        "example": "['CHDC', 'CIT', 'ENL', 'HATHY', 'HIDCL', 'NIFRA', 'NIFRAGED', 'NIFRAUR85/86', 'NRN']"
+      },
+      {
+        "name": "Development Banks",
+        "type": "list",
+        "null_count": 0,
+        "example": "['CORBL', 'EDBL', 'GBBL', 'GSY', 'GBBD85', 'GRDBL', 'JBBD87', 'JBBL', 'KSBBLD87', 'KSBBL', 'KSBBLPNP', 'KRBL', 'LBBLD89', 'LBBL', 'MLBLD89', 'MLBL', 'MDB', 'MND84/85', 'MNMF1', 'MNBBL', 'NABBC', 'SABBL', 'SAPDBL', 'SADBL', 'SDBD87', 'SHINED', 'SHINE', 'SINDU']"
+      },
+      {
+        "name": "Mutual Fund",
+        "type": "list",
+        "null_count": 0,
+        "example": "['GIBF1', 'LUK', 'NIBLGF', 'NICBF', 'NICSF', 'NSIF2', 'PRSF', 'RMF2', 'RMF1', 'RBBF40', 'SAGF']"
+      },
+      {
+        "name": "Non Life Insurance",
+        "type": "list",
+        "null_count": 0,
+        "example": "['HEI', 'IGI', 'NIL', 'NICL', 'NMIC', 'NLG', 'PRIN', 'RBCL', 'SALICO', 'SGIC', 'SICL', 'SPIL', 'UAIL']"
+      },
+      {
+        "name": "Others",
+        "type": "list",
+        "null_count": 0,
+        "example": "['HRL', 'JHAPA', 'MKCL', 'NTC', 'NFD', 'NRIC', 'NRM', 'NWCL', 'PURE', 'TTL']"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/security_id_map.json",
+    "size_kb": 9.75,
+    "last_modified_npt": "2026-10-28T17:00:22.521222+05:45",
+    "root_type": "dict",
+    "row_count": 569,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "USHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9192"
+      },
+      {
+        "name": "ACLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2790"
+      },
+      {
+        "name": "ACLBSLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2791"
+      },
+      {
+        "name": "ANLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "9161"
+      },
+      {
+        "name": "ANLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9164"
+      },
+      {
+        "name": "ADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "397"
+      },
+      {
+        "name": "ADBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2886"
+      },
+      {
+        "name": "ADBLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "4960"
+      },
+      {
+        "name": "ADBLB86",
+        "type": "int",
+        "null_count": 0,
+        "example": "8029"
+      },
+      {
+        "name": "ADBLB87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8030"
+      },
+      {
+        "name": "AKJCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2788"
+      },
+      {
+        "name": "API",
+        "type": "int",
+        "null_count": 0,
+        "example": "697"
+      },
+      {
+        "name": "APHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9337"
+      },
+      {
+        "name": "AKPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2757"
+      },
+      {
+        "name": "AHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "360"
+      },
+      {
+        "name": "AVU",
+        "type": "int",
+        "null_count": 0,
+        "example": "211"
+      },
+      {
+        "name": "ALBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2807"
+      },
+      {
+        "name": "ALBSLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2808"
+      },
+      {
+        "name": "AHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9150"
+      },
+      {
+        "name": "ALICLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "599"
+      },
+      {
+        "name": "ALICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "385"
+      },
+      {
+        "name": "AVYAN",
+        "type": "int",
+        "null_count": 0,
+        "example": "8117"
+      },
+      {
+        "name": "AVYANP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8120"
+      },
+      {
+        "name": "BHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8055"
+      },
+      {
+        "name": "BANDIPUR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9297"
+      },
+      {
+        "name": "BOKD86KA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9136"
+      },
+      {
+        "name": "BOKD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "4961"
+      },
+      {
+        "name": "BHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9135"
+      },
+      {
+        "name": "BARUN",
+        "type": "int",
+        "null_count": 0,
+        "example": "686"
+      },
+      {
+        "name": "BENH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9356"
+      },
+      {
+        "name": "BFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "227"
+      },
+      {
+        "name": "BFCPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "339"
+      },
+      {
+        "name": "BGWT",
+        "type": "int",
+        "null_count": 0,
+        "example": "9214"
+      },
+      {
+        "name": "BEDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9171"
+      },
+      {
+        "name": "BJHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9322"
+      },
+      {
+        "name": "BHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9267"
+      },
+      {
+        "name": "BHDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8075"
+      },
+      {
+        "name": "BSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "217"
+      },
+      {
+        "name": "BBC",
+        "type": "int",
+        "null_count": 0,
+        "example": "156"
+      },
+      {
+        "name": "BNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "195"
+      },
+      {
+        "name": "BNT",
+        "type": "int",
+        "null_count": 0,
+        "example": "213"
+      },
+      {
+        "name": "BNHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8032"
+      },
+      {
+        "name": "BUNGAL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9296"
+      },
+      {
+        "name": "BPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "153"
+      },
+      {
+        "name": "BSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "205"
+      },
+      {
+        "name": "CMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "259"
+      },
+      {
+        "name": "CHDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "3946"
+      },
+      {
+        "name": "CFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "245"
+      },
+      {
+        "name": "CFCLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "676"
+      },
+      {
+        "name": "CCBD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8068"
+      },
+      {
+        "name": "CGH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2917"
+      },
+      {
+        "name": "CBBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "698"
+      },
+      {
+        "name": "CBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "164"
+      },
+      {
+        "name": "CHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2766"
+      },
+      {
+        "name": "CHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "154"
+      },
+      {
+        "name": "CKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9232"
+      },
+      {
+        "name": "CIT",
+        "type": "int",
+        "null_count": 0,
+        "example": "210"
+      },
+      {
+        "name": "CITPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "9219"
+      },
+      {
+        "name": "CLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9209"
+      },
+      {
+        "name": "CLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9210"
+      },
+      {
+        "name": "C30MF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9191"
+      },
+      {
+        "name": "CSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9304"
+      },
+      {
+        "name": "CIZBD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9231"
+      },
+      {
+        "name": "CZBILP",
+        "type": "int",
+        "null_count": 0,
+        "example": "493"
+      },
+      {
+        "name": "CZBIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "348"
+      },
+      {
+        "name": "CIZBD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2889"
+      },
+      {
+        "name": "CITY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9173"
+      },
+      {
+        "name": "CBLD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8043"
+      },
+      {
+        "name": "PSDBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "387"
+      },
+      {
+        "name": "CORBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "450"
+      },
+      {
+        "name": "CORBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2763"
+      },
+      {
+        "name": "CREST",
+        "type": "int",
+        "null_count": 0,
+        "example": "9252"
+      },
+      {
+        "name": "CRESTP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9253"
+      },
+      {
+        "name": "CFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "361"
+      },
+      {
+        "name": "CYCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8065"
+      },
+      {
+        "name": "CYCLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8067"
+      },
+      {
+        "name": "DHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9293"
+      },
+      {
+        "name": "DDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "166"
+      },
+      {
+        "name": "DDBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "607"
+      },
+      {
+        "name": "DLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8123"
+      },
+      {
+        "name": "DHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2754"
+      },
+      {
+        "name": "DOLTI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9170"
+      },
+      {
+        "name": "DORDI",
+        "type": "int",
+        "null_count": 0,
+        "example": "8070"
+      },
+      {
+        "name": "EHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8131"
+      },
+      {
+        "name": "ENL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8034"
+      },
+      {
+        "name": "EBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "137"
+      },
+      {
+        "name": "EBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "594"
+      },
+      {
+        "name": "EBLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8119"
+      },
+      {
+        "name": "EBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "8044"
+      },
+      {
+        "name": "EBLEB89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9152"
+      },
+      {
+        "name": "EBLD91",
+        "type": "int",
+        "null_count": 0,
+        "example": "9255"
+      },
+      {
+        "name": "ECL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9347"
+      },
+      {
+        "name": "EDBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "612"
+      },
+      {
+        "name": "EDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "274"
+      },
+      {
+        "name": "FMDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "490"
+      },
+      {
+        "name": "FMDBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "722"
+      },
+      {
+        "name": "FHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "228"
+      },
+      {
+        "name": "FOWAD",
+        "type": "int",
+        "null_count": 0,
+        "example": "2758"
+      },
+      {
+        "name": "FOWADP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2921"
+      },
+      {
+        "name": "GMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2815"
+      },
+      {
+        "name": "GMFBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2818"
+      },
+      {
+        "name": "GBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "417"
+      },
+      {
+        "name": "GBBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "623"
+      },
+      {
+        "name": "GSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9248"
+      },
+      {
+        "name": "GBBD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8033"
+      },
+      {
+        "name": "GHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2806"
+      },
+      {
+        "name": "GCIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9193"
+      },
+      {
+        "name": "GIBF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "8106"
+      },
+      {
+        "name": "GBIME",
+        "type": "int",
+        "null_count": 0,
+        "example": "341"
+      },
+      {
+        "name": "GBIMEP",
+        "type": "int",
+        "null_count": 0,
+        "example": "511"
+      },
+      {
+        "name": "GBIMESY2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9269"
+      },
+      {
+        "name": "GBILD86/87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8004"
+      },
+      {
+        "name": "GBILD84/85",
+        "type": "int",
+        "null_count": 0,
+        "example": "9168"
+      },
+      {
+        "name": "GILB",
+        "type": "int",
+        "null_count": 0,
+        "example": "705"
+      },
+      {
+        "name": "GILBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "731"
+      },
+      {
+        "name": "GFCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "232"
+      },
+      {
+        "name": "GFCLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "355"
+      },
+      {
+        "name": "GWFD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2883"
+      },
+      {
+        "name": "GRU",
+        "type": "int",
+        "null_count": 0,
+        "example": "207"
+      },
+      {
+        "name": "GBLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "583"
+      },
+      {
+        "name": "PDBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "346"
+      },
+      {
+        "name": "GBLBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "712"
+      },
+      {
+        "name": "GRDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2744"
+      },
+      {
+        "name": "GRDBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2745"
+      },
+      {
+        "name": "GVL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8045"
+      },
+      {
+        "name": "GLH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2924"
+      },
+      {
+        "name": "GMLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9246"
+      },
+      {
+        "name": "GMLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9247"
+      },
+      {
+        "name": "GMFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "263"
+      },
+      {
+        "name": "GMFILP",
+        "type": "int",
+        "null_count": 0,
+        "example": "613"
+      },
+      {
+        "name": "GLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2826"
+      },
+      {
+        "name": "GUFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "204"
+      },
+      {
+        "name": "GUFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "315"
+      },
+      {
+        "name": "HBT",
+        "type": "int",
+        "null_count": 0,
+        "example": "215"
+      },
+      {
+        "name": "HATHY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9213"
+      },
+      {
+        "name": "HDHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2880"
+      },
+      {
+        "name": "HURJA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2824"
+      },
+      {
+        "name": "HBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "9137"
+      },
+      {
+        "name": "H8020",
+        "type": "int",
+        "null_count": 0,
+        "example": "9221"
+      },
+      {
+        "name": "HBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "134"
+      },
+      {
+        "name": "HBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "564"
+      },
+      {
+        "name": "HDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "235"
+      },
+      {
+        "name": "HEI",
+        "type": "int",
+        "null_count": 0,
+        "example": "179"
+      },
+      {
+        "name": "HEIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "700"
+      },
+      {
+        "name": "HFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "441"
+      },
+      {
+        "name": "HHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8076"
+      },
+      {
+        "name": "HLBSLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "725"
+      },
+      {
+        "name": "HLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "693"
+      },
+      {
+        "name": "HLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "393"
+      },
+      {
+        "name": "HLIPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "701"
+      },
+      {
+        "name": "HLICF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9290"
+      },
+      {
+        "name": "HPPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2767"
+      },
+      {
+        "name": "HRL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9234"
+      },
+      {
+        "name": "HRLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9235"
+      },
+      {
+        "name": "HIMSTAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9270"
+      },
+      {
+        "name": "HFIN",
+        "type": "int",
+        "null_count": 0,
+        "example": "9308"
+      },
+      {
+        "name": "HIDCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2742"
+      },
+      {
+        "name": "HIDCLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8111"
+      },
+      {
+        "name": "ILI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9184"
+      },
+      {
+        "name": "ILIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9185"
+      },
+      {
+        "name": "ICFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "273"
+      },
+      {
+        "name": "ICFCPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "400"
+      },
+      {
+        "name": "ICFCD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2882"
+      },
+      {
+        "name": "ICFCD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "9249"
+      },
+      {
+        "name": "ICFCD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9327"
+      },
+      {
+        "name": "IGIPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "635"
+      },
+      {
+        "name": "IGI",
+        "type": "int",
+        "null_count": 0,
+        "example": "186"
+      },
+      {
+        "name": "ILBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2832"
+      },
+      {
+        "name": "ILBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2833"
+      },
+      {
+        "name": "IHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9176"
+      },
+      {
+        "name": "JFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "250"
+      },
+      {
+        "name": "JFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "292"
+      },
+      {
+        "name": "JSLBB",
+        "type": "int",
+        "null_count": 0,
+        "example": "695"
+      },
+      {
+        "name": "JSLBBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "719"
+      },
+      {
+        "name": "JBLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "4950"
+      },
+      {
+        "name": "JBLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "4951"
+      },
+      {
+        "name": "JHAPA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9300"
+      },
+      {
+        "name": "JOSHI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2789"
+      },
+      {
+        "name": "JBBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "8020"
+      },
+      {
+        "name": "JBBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "579"
+      },
+      {
+        "name": "JBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "418"
+      },
+      {
+        "name": "JSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "209"
+      },
+      {
+        "name": "KAHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9346"
+      },
+      {
+        "name": "KMCDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "593"
+      },
+      {
+        "name": "KMCDBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "678"
+      },
+      {
+        "name": "KPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2787"
+      },
+      {
+        "name": "KHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9334"
+      },
+      {
+        "name": "KDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9151"
+      },
+      {
+        "name": "KSBBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4948"
+      },
+      {
+        "name": "KSBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "677"
+      },
+      {
+        "name": "KSBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "459"
+      },
+      {
+        "name": "KSBBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9328"
+      },
+      {
+        "name": "KRBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "428"
+      },
+      {
+        "name": "KRBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "1739"
+      },
+      {
+        "name": "KKHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2751"
+      },
+      {
+        "name": "KBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2885"
+      },
+      {
+        "name": "KEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2933"
+      },
+      {
+        "name": "KBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "283"
+      },
+      {
+        "name": "KBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "142"
+      },
+      {
+        "name": "KBLD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9220"
+      },
+      {
+        "name": "KSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9241"
+      },
+      {
+        "name": "KBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8127"
+      },
+      {
+        "name": "KDBY",
+        "type": "int",
+        "null_count": 0,
+        "example": "8074"
+      },
+      {
+        "name": "KBSH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9196"
+      },
+      {
+        "name": "LUK",
+        "type": "int",
+        "null_count": 0,
+        "example": "2902"
+      },
+      {
+        "name": "LLBSPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "644"
+      },
+      {
+        "name": "LLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "618"
+      },
+      {
+        "name": "LBLD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "5984"
+      },
+      {
+        "name": "LVF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9198"
+      },
+      {
+        "name": "LSH12",
+        "type": "int",
+        "null_count": 0,
+        "example": "9350"
+      },
+      {
+        "name": "LSD92",
+        "type": "int",
+        "null_count": 0,
+        "example": "9355"
+      },
+      {
+        "name": "LSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "141"
+      },
+      {
+        "name": "LSLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "286"
+      },
+      {
+        "name": "SFMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2877"
+      },
+      {
+        "name": "LBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2879"
+      },
+      {
+        "name": "LEC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2903"
+      },
+      {
+        "name": "LICN",
+        "type": "int",
+        "null_count": 0,
+        "example": "188"
+      },
+      {
+        "name": "LICNPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "696"
+      },
+      {
+        "name": "LBBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9197"
+      },
+      {
+        "name": "LBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "358"
+      },
+      {
+        "name": "LBBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "626"
+      },
+      {
+        "name": "MABEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9287"
+      },
+      {
+        "name": "MBLD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2866"
+      },
+      {
+        "name": "MBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "281"
+      },
+      {
+        "name": "MBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "140"
+      },
+      {
+        "name": "MBLEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9257"
+      },
+      {
+        "name": "MBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9335"
+      },
+      {
+        "name": "MBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "7985"
+      },
+      {
+        "name": "MBJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8031"
+      },
+      {
+        "name": "MLBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9195"
+      },
+      {
+        "name": "MLBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "401"
+      },
+      {
+        "name": "MLBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "620"
+      },
+      {
+        "name": "MDBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "291"
+      },
+      {
+        "name": "MLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2925"
+      },
+      {
+        "name": "MLBSLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2926"
+      },
+      {
+        "name": "MSLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2768"
+      },
+      {
+        "name": "MSLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2928"
+      },
+      {
+        "name": "MKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9167"
+      },
+      {
+        "name": "MKJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8005"
+      },
+      {
+        "name": "MAKAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9166"
+      },
+      {
+        "name": "MEHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9203"
+      },
+      {
+        "name": "MHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8102"
+      },
+      {
+        "name": "MANDU",
+        "type": "int",
+        "null_count": 0,
+        "example": "9212"
+      },
+      {
+        "name": "MFILPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "730"
+      },
+      {
+        "name": "MFLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "2932"
+      },
+      {
+        "name": "MFIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "516"
+      },
+      {
+        "name": "MLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8018"
+      },
+      {
+        "name": "MLBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8019"
+      },
+      {
+        "name": "MMKJL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9217"
+      },
+      {
+        "name": "MATRI",
+        "type": "int",
+        "null_count": 0,
+        "example": "694"
+      },
+      {
+        "name": "MATRIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "733"
+      },
+      {
+        "name": "MKHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9149"
+      },
+      {
+        "name": "MMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "8023"
+      },
+      {
+        "name": "MCHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9175"
+      },
+      {
+        "name": "MERO",
+        "type": "int",
+        "null_count": 0,
+        "example": "1741"
+      },
+      {
+        "name": "MEROPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "1742"
+      },
+      {
+        "name": "MSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9215"
+      },
+      {
+        "name": "MDB",
+        "type": "int",
+        "null_count": 0,
+        "example": "371"
+      },
+      {
+        "name": "MDBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "609"
+      },
+      {
+        "name": "MLBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "707"
+      },
+      {
+        "name": "MLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "601"
+      },
+      {
+        "name": "MEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9179"
+      },
+      {
+        "name": "MHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9158"
+      },
+      {
+        "name": "MEPDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9352"
+      },
+      {
+        "name": "MEN",
+        "type": "int",
+        "null_count": 0,
+        "example": "2913"
+      },
+      {
+        "name": "MHNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2811"
+      },
+      {
+        "name": "MND84/85",
+        "type": "int",
+        "null_count": 0,
+        "example": "4969"
+      },
+      {
+        "name": "MNMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "9245"
+      },
+      {
+        "name": "MNBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "474"
+      },
+      {
+        "name": "MNBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "640"
+      },
+      {
+        "name": "MKCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9230"
+      },
+      {
+        "name": "MPFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "471"
+      },
+      {
+        "name": "MPFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "1737"
+      },
+      {
+        "name": "NABIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "131"
+      },
+      {
+        "name": "NABILP",
+        "type": "int",
+        "null_count": 0,
+        "example": "282"
+      },
+      {
+        "name": "NBF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "2835"
+      },
+      {
+        "name": "NBLD82",
+        "type": "int",
+        "null_count": 0,
+        "example": "2892"
+      },
+      {
+        "name": "NBF3",
+        "type": "int",
+        "null_count": 0,
+        "example": "8024"
+      },
+      {
+        "name": "NBLD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "8027"
+      },
+      {
+        "name": "NABILD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "9238"
+      },
+      {
+        "name": "NABILD2089",
+        "type": "int",
+        "null_count": 0,
+        "example": "9299"
+      },
+      {
+        "name": "NABILPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9326"
+      },
+      {
+        "name": "NADEP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2784"
+      },
+      {
+        "name": "NADEPP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2785"
+      },
+      {
+        "name": "NABBCP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8037"
+      },
+      {
+        "name": "NABBC",
+        "type": "int",
+        "null_count": 0,
+        "example": "172"
+      },
+      {
+        "name": "NMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2746"
+      },
+      {
+        "name": "NMFBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2747"
+      },
+      {
+        "name": "NHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "152"
+      },
+      {
+        "name": "NLICLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "582"
+      },
+      {
+        "name": "NLICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "178"
+      },
+      {
+        "name": "NIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "183"
+      },
+      {
+        "name": "NILPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "615"
+      },
+      {
+        "name": "NBBD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2854"
+      },
+      {
+        "name": "NBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "517"
+      },
+      {
+        "name": "NBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9239"
+      },
+      {
+        "name": "NBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4959"
+      },
+      {
+        "name": "NBBU",
+        "type": "int",
+        "null_count": 0,
+        "example": "233"
+      },
+      {
+        "name": "NCCD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2936"
+      },
+      {
+        "name": "NTC",
+        "type": "int",
+        "null_count": 0,
+        "example": "307"
+      },
+      {
+        "name": "NFD",
+        "type": "int",
+        "null_count": 0,
+        "example": "151"
+      },
+      {
+        "name": "NFSPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "651"
+      },
+      {
+        "name": "NFS",
+        "type": "int",
+        "null_count": 0,
+        "example": "194"
+      },
+      {
+        "name": "NHDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2769"
+      },
+      {
+        "name": "NIFRA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2919"
+      },
+      {
+        "name": "NIFRAP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2920"
+      },
+      {
+        "name": "NIFRAGED",
+        "type": "int",
+        "null_count": 0,
+        "example": "9261"
+      },
+      {
+        "name": "NIFRAUR85/86",
+        "type": "int",
+        "null_count": 0,
+        "example": "9141"
+      },
+      {
+        "name": "NICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "176"
+      },
+      {
+        "name": "NICLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "689"
+      },
+      {
+        "name": "NIMBD90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9243"
+      },
+      {
+        "name": "NIBLSTF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9244"
+      },
+      {
+        "name": "NIBD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2931"
+      },
+      {
+        "name": "NIBSF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "4949"
+      },
+      {
+        "name": "NIMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "132"
+      },
+      {
+        "name": "NIMBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "469"
+      },
+      {
+        "name": "NKU",
+        "type": "int",
+        "null_count": 0,
+        "example": "222"
+      },
+      {
+        "name": "NLIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "187"
+      },
+      {
+        "name": "NLICP",
+        "type": "int",
+        "null_count": 0,
+        "example": "589"
+      },
+      {
+        "name": "NSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9312"
+      },
+      {
+        "name": "NLO",
+        "type": "int",
+        "null_count": 0,
+        "example": "198"
+      },
+      {
+        "name": "NMIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9250"
+      },
+      {
+        "name": "NMICP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9251"
+      },
+      {
+        "name": "NRIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2881"
+      },
+      {
+        "name": "NRICP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2884"
+      },
+      {
+        "name": "NRM",
+        "type": "int",
+        "null_count": 0,
+        "example": "9183"
+      },
+      {
+        "name": "SBI",
+        "type": "int",
+        "null_count": 0,
+        "example": "135"
+      },
+      {
+        "name": "SBIPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "347"
+      },
+      {
+        "name": "SBIBD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2890"
+      },
+      {
+        "name": "SBID2090",
+        "type": "int",
+        "null_count": 0,
+        "example": "9289"
+      },
+      {
+        "name": "SBID89",
+        "type": "int",
+        "null_count": 0,
+        "example": "9211"
+      },
+      {
+        "name": "SBID83",
+        "type": "int",
+        "null_count": 0,
+        "example": "8110"
+      },
+      {
+        "name": "NSM",
+        "type": "int",
+        "null_count": 0,
+        "example": "200"
+      },
+      {
+        "name": "NSMPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "313"
+      },
+      {
+        "name": "NTL",
+        "type": "int",
+        "null_count": 0,
+        "example": "158"
+      },
+      {
+        "name": "NVG",
+        "type": "int",
+        "null_count": 0,
+        "example": "201"
+      },
+      {
+        "name": "NWCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9233"
+      },
+      {
+        "name": "NWC",
+        "type": "int",
+        "null_count": 0,
+        "example": "159"
+      },
+      {
+        "name": "NMLBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "661"
+      },
+      {
+        "name": "NMLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "396"
+      },
+      {
+        "name": "NESDO",
+        "type": "int",
+        "null_count": 0,
+        "example": "8041"
+      },
+      {
+        "name": "NESDOP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8042"
+      },
+      {
+        "name": "NGPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2743"
+      },
+      {
+        "name": "NIBLGF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9138"
+      },
+      {
+        "name": "NICD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "7986"
+      },
+      {
+        "name": "NICFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8073"
+      },
+      {
+        "name": "NICGF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9236"
+      },
+      {
+        "name": "NICAD2091",
+        "type": "int",
+        "null_count": 0,
+        "example": "9266"
+      },
+      {
+        "name": "NICA",
+        "type": "int",
+        "null_count": 0,
+        "example": "139"
+      },
+      {
+        "name": "NICAP",
+        "type": "int",
+        "null_count": 0,
+        "example": "309"
+      },
+      {
+        "name": "NICAD85/86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2825"
+      },
+      {
+        "name": "NICBF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2863"
+      },
+      {
+        "name": "NICSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "4967"
+      },
+      {
+        "name": "NICLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2887"
+      },
+      {
+        "name": "NICLBSLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2888"
+      },
+      {
+        "name": "NUBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "163"
+      },
+      {
+        "name": "NUBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "672"
+      },
+      {
+        "name": "NLGPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "684"
+      },
+      {
+        "name": "NLG",
+        "type": "int",
+        "null_count": 0,
+        "example": "559"
+      },
+      {
+        "name": "NMBMFP",
+        "type": "int",
+        "null_count": 0,
+        "example": "723"
+      },
+      {
+        "name": "NMBMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "704"
+      },
+      {
+        "name": "NMBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "391"
+      },
+      {
+        "name": "NMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "238"
+      },
+      {
+        "name": "NMBD2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2850"
+      },
+      {
+        "name": "NMBHF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9254"
+      },
+      {
+        "name": "NMBPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9332"
+      },
+      {
+        "name": "NMBD87/88",
+        "type": "int",
+        "null_count": 0,
+        "example": "4963"
+      },
+      {
+        "name": "NMBEB92/93",
+        "type": "int",
+        "null_count": 0,
+        "example": "4964"
+      },
+      {
+        "name": "NMBUR93/94",
+        "type": "int",
+        "null_count": 0,
+        "example": "8105"
+      },
+      {
+        "name": "NMBD89/90",
+        "type": "int",
+        "null_count": 0,
+        "example": "9180"
+      },
+      {
+        "name": "NSIF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "8125"
+      },
+      {
+        "name": "NRN",
+        "type": "int",
+        "null_count": 0,
+        "example": "2898"
+      },
+      {
+        "name": "NYADI",
+        "type": "int",
+        "null_count": 0,
+        "example": "8026"
+      },
+      {
+        "name": "OMPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9256"
+      },
+      {
+        "name": "OHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "149"
+      },
+      {
+        "name": "PCIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9330"
+      },
+      {
+        "name": "PMHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2786"
+      },
+      {
+        "name": "PPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2813"
+      },
+      {
+        "name": "PHCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8133"
+      },
+      {
+        "name": "PPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8122"
+      },
+      {
+        "name": "PFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "236"
+      },
+      {
+        "name": "PFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "390"
+      },
+      {
+        "name": "PRVU",
+        "type": "int",
+        "null_count": 0,
+        "example": "255"
+      },
+      {
+        "name": "PRFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "488"
+      },
+      {
+        "name": "PRVUPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "632"
+      },
+      {
+        "name": "PBLD86",
+        "type": "int",
+        "null_count": 0,
+        "example": "2875"
+      },
+      {
+        "name": "PBLD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2904"
+      },
+      {
+        "name": "PSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "4947"
+      },
+      {
+        "name": "PBLD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "4962"
+      },
+      {
+        "name": "PRSF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9174"
+      },
+      {
+        "name": "PRINPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "590"
+      },
+      {
+        "name": "PRIN",
+        "type": "int",
+        "null_count": 0,
+        "example": "184"
+      },
+      {
+        "name": "PMLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2915"
+      },
+      {
+        "name": "PMLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9237"
+      },
+      {
+        "name": "PCBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "544"
+      },
+      {
+        "name": "PCBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "357"
+      },
+      {
+        "name": "PBD93",
+        "type": "int",
+        "null_count": 0,
+        "example": "9354"
+      },
+      {
+        "name": "PBD85",
+        "type": "int",
+        "null_count": 0,
+        "example": "6984"
+      },
+      {
+        "name": "PBD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "8116"
+      },
+      {
+        "name": "PBD88",
+        "type": "int",
+        "null_count": 0,
+        "example": "8097"
+      },
+      {
+        "name": "PROFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "338"
+      },
+      {
+        "name": "PROFLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "354"
+      },
+      {
+        "name": "PURE",
+        "type": "int",
+        "null_count": 0,
+        "example": "9258"
+      },
+      {
+        "name": "RADHI",
+        "type": "int",
+        "null_count": 0,
+        "example": "2776"
+      },
+      {
+        "name": "RJM",
+        "type": "int",
+        "null_count": 0,
+        "example": "203"
+      },
+      {
+        "name": "RHGCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8108"
+      },
+      {
+        "name": "RBBD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "8003"
+      },
+      {
+        "name": "RBBD2088",
+        "type": "int",
+        "null_count": 0,
+        "example": "9264"
+      },
+      {
+        "name": "RBCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "177"
+      },
+      {
+        "name": "RBCLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "634"
+      },
+      {
+        "name": "RHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2841"
+      },
+      {
+        "name": "RAWA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9181"
+      },
+      {
+        "name": "RMF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9178"
+      },
+      {
+        "name": "RMF1",
+        "type": "int",
+        "null_count": 0,
+        "example": "4968"
+      },
+      {
+        "name": "RBBF40",
+        "type": "int",
+        "null_count": 0,
+        "example": "9302"
+      },
+      {
+        "name": "RSY",
+        "type": "int",
+        "null_count": 0,
+        "example": "9259"
+      },
+      {
+        "name": "RSY2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9351"
+      },
+      {
+        "name": "RNLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9199"
+      },
+      {
+        "name": "RNLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9200"
+      },
+      {
+        "name": "RLFL",
+        "type": "int",
+        "null_count": 0,
+        "example": "587"
+      },
+      {
+        "name": "RLFLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "650"
+      },
+      {
+        "name": "RSML",
+        "type": "int",
+        "null_count": 0,
+        "example": "9306"
+      },
+      {
+        "name": "RLEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9324"
+      },
+      {
+        "name": "RIDI",
+        "type": "int",
+        "null_count": 0,
+        "example": "610"
+      },
+      {
+        "name": "RFPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8066"
+      },
+      {
+        "name": "RSDC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2748"
+      },
+      {
+        "name": "RSDCP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2749"
+      },
+      {
+        "name": "RURU",
+        "type": "int",
+        "null_count": 0,
+        "example": "2935"
+      },
+      {
+        "name": "SABSLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "2844"
+      },
+      {
+        "name": "SAGAR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9294"
+      },
+      {
+        "name": "SMJC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9159"
+      },
+      {
+        "name": "SALICO",
+        "type": "int",
+        "null_count": 0,
+        "example": "185"
+      },
+      {
+        "name": "SALICOPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "619"
+      },
+      {
+        "name": "SAHAS",
+        "type": "int",
+        "null_count": 0,
+        "example": "8021"
+      },
+      {
+        "name": "SABBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9305"
+      },
+      {
+        "name": "SABBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9307"
+      },
+      {
+        "name": "STC",
+        "type": "int",
+        "null_count": 0,
+        "example": "155"
+      },
+      {
+        "name": "SMATA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2761"
+      },
+      {
+        "name": "SMATAP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2762"
+      },
+      {
+        "name": "SFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "221"
+      },
+      {
+        "name": "SPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8025"
+      },
+      {
+        "name": "SMPDA",
+        "type": "int",
+        "null_count": 0,
+        "example": "2896"
+      },
+      {
+        "name": "SMPDAP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2897"
+      },
+      {
+        "name": "SLBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2804"
+      },
+      {
+        "name": "SLBSLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "2805"
+      },
+      {
+        "name": "SKBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "574"
+      },
+      {
+        "name": "SKBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "671"
+      },
+      {
+        "name": "SGHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9345"
+      },
+      {
+        "name": "SNMAPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "362"
+      },
+      {
+        "name": "SANIMA",
+        "type": "int",
+        "null_count": 0,
+        "example": "171"
+      },
+      {
+        "name": "SAND2085",
+        "type": "int",
+        "null_count": 0,
+        "example": "2828"
+      },
+      {
+        "name": "SBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "2922"
+      },
+      {
+        "name": "SLCF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2923"
+      },
+      {
+        "name": "SANIMAPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9333"
+      },
+      {
+        "name": "SAEF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9349"
+      },
+      {
+        "name": "SBD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8109"
+      },
+      {
+        "name": "SGIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "2908"
+      },
+      {
+        "name": "SGICP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2909"
+      },
+      {
+        "name": "SAGF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9139"
+      },
+      {
+        "name": "SHPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "591"
+      },
+      {
+        "name": "TAMOR",
+        "type": "int",
+        "null_count": 0,
+        "example": "9156"
+      },
+      {
+        "name": "SRLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "5982"
+      },
+      {
+        "name": "SRLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "5983"
+      },
+      {
+        "name": "SJCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2842"
+      },
+      {
+        "name": "SANVI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9263"
+      },
+      {
+        "name": "SAPDBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2860"
+      },
+      {
+        "name": "SAPDBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2861"
+      },
+      {
+        "name": "SARBTM",
+        "type": "int",
+        "null_count": 0,
+        "example": "9242"
+      },
+      {
+        "name": "SAPIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9353"
+      },
+      {
+        "name": "SPHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8121"
+      },
+      {
+        "name": "SADBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "708"
+      },
+      {
+        "name": "SADBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "472"
+      },
+      {
+        "name": "SDBD87",
+        "type": "int",
+        "null_count": 0,
+        "example": "6985"
+      },
+      {
+        "name": "SICL",
+        "type": "int",
+        "null_count": 0,
+        "example": "192"
+      },
+      {
+        "name": "SICLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "606"
+      },
+      {
+        "name": "SIPD",
+        "type": "int",
+        "null_count": 0,
+        "example": "9329"
+      },
+      {
+        "name": "SHINED",
+        "type": "int",
+        "null_count": 0,
+        "example": "9286"
+      },
+      {
+        "name": "SHINEP",
+        "type": "int",
+        "null_count": 0,
+        "example": "669"
+      },
+      {
+        "name": "SHINE",
+        "type": "int",
+        "null_count": 0,
+        "example": "473"
+      },
+      {
+        "name": "SSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2907"
+      },
+      {
+        "name": "SHIVM",
+        "type": "int",
+        "null_count": 0,
+        "example": "2809"
+      },
+      {
+        "name": "SBPP",
+        "type": "int",
+        "null_count": 0,
+        "example": "226"
+      },
+      {
+        "name": "SIFC",
+        "type": "int",
+        "null_count": 0,
+        "example": "244"
+      },
+      {
+        "name": "SIFCPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "456"
+      },
+      {
+        "name": "SRS",
+        "type": "int",
+        "null_count": 0,
+        "example": "230"
+      },
+      {
+        "name": "SAIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9301"
+      },
+      {
+        "name": "SHLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "8132"
+      },
+      {
+        "name": "SHLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "8134"
+      },
+      {
+        "name": "SPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9147"
+      },
+      {
+        "name": "SBLD84",
+        "type": "int",
+        "null_count": 0,
+        "example": "2912"
+      },
+      {
+        "name": "SIGS2",
+        "type": "int",
+        "null_count": 0,
+        "example": "2859"
+      },
+      {
+        "name": "SEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2770"
+      },
+      {
+        "name": "SBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "145"
+      },
+      {
+        "name": "SBLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "449"
+      },
+      {
+        "name": "SBLD89",
+        "type": "int",
+        "null_count": 0,
+        "example": "8098"
+      },
+      {
+        "name": "SIGS3",
+        "type": "int",
+        "null_count": 0,
+        "example": "9182"
+      },
+      {
+        "name": "SBLD2091",
+        "type": "int",
+        "null_count": 0,
+        "example": "9271"
+      },
+      {
+        "name": "SEF2",
+        "type": "int",
+        "null_count": 0,
+        "example": "9348"
+      },
+      {
+        "name": "SBLPNP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9331"
+      },
+      {
+        "name": "SPIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "182"
+      },
+      {
+        "name": "SPILPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "713"
+      },
+      {
+        "name": "SIKLES",
+        "type": "int",
+        "null_count": 0,
+        "example": "8126"
+      },
+      {
+        "name": "SINDU",
+        "type": "int",
+        "null_count": 0,
+        "example": "561"
+      },
+      {
+        "name": "SINDUP",
+        "type": "int",
+        "null_count": 0,
+        "example": "652"
+      },
+      {
+        "name": "SHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2934"
+      },
+      {
+        "name": "SNORL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9344"
+      },
+      {
+        "name": "SHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "147"
+      },
+      {
+        "name": "SOHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9311"
+      },
+      {
+        "name": "SONA",
+        "type": "int",
+        "null_count": 0,
+        "example": "9216"
+      },
+      {
+        "name": "SOPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9336"
+      },
+      {
+        "name": "SCB",
+        "type": "int",
+        "null_count": 0,
+        "example": "133"
+      },
+      {
+        "name": "SCBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "655"
+      },
+      {
+        "name": "SCBD",
+        "type": "int",
+        "null_count": 0,
+        "example": "9177"
+      },
+      {
+        "name": "SNLI",
+        "type": "int",
+        "null_count": 0,
+        "example": "9201"
+      },
+      {
+        "name": "SNLIP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9202"
+      },
+      {
+        "name": "SBCF",
+        "type": "int",
+        "null_count": 0,
+        "example": "2937"
+      },
+      {
+        "name": "SRBLD83",
+        "type": "int",
+        "null_count": 0,
+        "example": "2878"
+      },
+      {
+        "name": "SFEF",
+        "type": "int",
+        "null_count": 0,
+        "example": "9154"
+      },
+      {
+        "name": "SKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9323"
+      },
+      {
+        "name": "SMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9146"
+      },
+      {
+        "name": "SMH",
+        "type": "int",
+        "null_count": 0,
+        "example": "9148"
+      },
+      {
+        "name": "SMB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2771"
+      },
+      {
+        "name": "SMBPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "2772"
+      },
+      {
+        "name": "SJLICP",
+        "type": "int",
+        "null_count": 0,
+        "example": "581"
+      },
+      {
+        "name": "SJLIC",
+        "type": "int",
+        "null_count": 0,
+        "example": "403"
+      },
+      {
+        "name": "SKHEL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9325"
+      },
+      {
+        "name": "SWMFPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "720"
+      },
+      {
+        "name": "SWMF",
+        "type": "int",
+        "null_count": 0,
+        "example": "706"
+      },
+      {
+        "name": "SWBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "268"
+      },
+      {
+        "name": "SWBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "314"
+      },
+      {
+        "name": "SMFBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "2829"
+      },
+      {
+        "name": "SMFBSP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2830"
+      },
+      {
+        "name": "SLBBL",
+        "type": "int",
+        "null_count": 0,
+        "example": "545"
+      },
+      {
+        "name": "SLBBLP",
+        "type": "int",
+        "null_count": 0,
+        "example": "721"
+      },
+      {
+        "name": "SWASTIK",
+        "type": "int",
+        "null_count": 0,
+        "example": "9295"
+      },
+      {
+        "name": "SWASTIKP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9298"
+      },
+      {
+        "name": "SGHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8100"
+      },
+      {
+        "name": "SYPNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9303"
+      },
+      {
+        "name": "SPDL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2759"
+      },
+      {
+        "name": "TPKHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9343"
+      },
+      {
+        "name": "TRH",
+        "type": "int",
+        "null_count": 0,
+        "example": "148"
+      },
+      {
+        "name": "TPC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8022"
+      },
+      {
+        "name": "TSHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9194"
+      },
+      {
+        "name": "TTL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9262"
+      },
+      {
+        "name": "TVCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9218"
+      },
+      {
+        "name": "UNL",
+        "type": "int",
+        "null_count": 0,
+        "example": "219"
+      },
+      {
+        "name": "UNHPL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2831"
+      },
+      {
+        "name": "UNLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "9142"
+      },
+      {
+        "name": "UNLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "9140"
+      },
+      {
+        "name": "UAILPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "726"
+      },
+      {
+        "name": "UAIL",
+        "type": "int",
+        "null_count": 0,
+        "example": "180"
+      },
+      {
+        "name": "UMRH",
+        "type": "int",
+        "null_count": 0,
+        "example": "2914"
+      },
+      {
+        "name": "UMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2760"
+      },
+      {
+        "name": "UPCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "2810"
+      },
+      {
+        "name": "USLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2774"
+      },
+      {
+        "name": "USLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2775"
+      },
+      {
+        "name": "ULBSL",
+        "type": "int",
+        "null_count": 0,
+        "example": "8063"
+      },
+      {
+        "name": "ULBSLPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "8064"
+      },
+      {
+        "name": "UHEWA",
+        "type": "int",
+        "null_count": 0,
+        "example": "8099"
+      },
+      {
+        "name": "ULHC",
+        "type": "int",
+        "null_count": 0,
+        "example": "9208"
+      },
+      {
+        "name": "USHEC",
+        "type": "int",
+        "null_count": 0,
+        "example": "8104"
+      },
+      {
+        "name": "UPPER",
+        "type": "int",
+        "null_count": 0,
+        "example": "2792"
+      },
+      {
+        "name": "VLBS",
+        "type": "int",
+        "null_count": 0,
+        "example": "687"
+      },
+      {
+        "name": "VLBSPO",
+        "type": "int",
+        "null_count": 0,
+        "example": "716"
+      },
+      {
+        "name": "VLUCL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9225"
+      },
+      {
+        "name": "WNLB",
+        "type": "int",
+        "null_count": 0,
+        "example": "2781"
+      },
+      {
+        "name": "WNLBP",
+        "type": "int",
+        "null_count": 0,
+        "example": "2782"
+      },
+      {
+        "name": "YHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "146"
+      },
+      {
+        "name": "YMHL",
+        "type": "int",
+        "null_count": 0,
+        "example": "9342"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "unused",
+    "status": "OK"
+  },
+  {
+    "path": "data/security_list.json",
+    "size_kb": 108.76,
+    "last_modified_npt": "2026-10-28T17:00:22.395425+05:45",
+    "root_type": "list",
+    "row_count": 569,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "9192"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "USHL"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Upper Syange Hydropower Limited"
+      },
+      {
+        "name": "name",
+        "type": "str",
+        "null_count": 0,
+        "example": "(USHL) Upper Syange Hydropower Limited"
+      },
+      {
+        "name": "activeStatus",
+        "type": "str",
+        "null_count": 0,
+        "example": "A"
+      }
+    ],
+    "source_method_writes": "collect_slow/Collector.collect_slow",
+    "refresh_tier": "slow daily/CLI-only",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/sub_indices.json",
+    "size_kb": 1.72,
+    "last_modified_npt": "2026-10-28T17:00:21.655048+05:45",
+    "root_type": "list",
+    "row_count": 13,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "id",
+        "type": "int",
+        "null_count": 0,
+        "example": "64"
+      },
+      {
+        "name": "index",
+        "type": "str",
+        "null_count": 0,
+        "example": "Microfinance Index"
+      },
+      {
+        "name": "change",
+        "type": "float",
+        "null_count": 0,
+        "example": "39.42"
+      },
+      {
+        "name": "perChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "0.87"
+      },
+      {
+        "name": "currentValue",
+        "type": "float",
+        "null_count": 0,
+        "example": "4531.96"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/summary.json",
+    "size_kb": 0.47,
+    "last_modified_npt": "2026-10-28T17:00:21.616221+05:45",
+    "root_type": "list",
+    "row_count": 6,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "detail",
+        "type": "str",
+        "null_count": 0,
+        "example": "Total Turnover Rs:"
+      },
+      {
+        "name": "value",
+        "type": "float",
+        "null_count": 0,
+        "example": "7458677368.14"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/supply_demand.json",
+    "size_kb": 0.4,
+    "last_modified_npt": "2026-10-28T17:00:21.801437+05:45",
+    "root_type": "dict",
+    "row_count": 2,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "supplyList",
+        "type": "list",
+        "null_count": 0,
+        "example": "[{'totalQuantity': 145, 'totalOrder': 4, 'securityId': 6984, 'symbol': 'PBD85', 'securityName': '8.75 % Prime Debenture 2085'}]"
+      },
+      {
+        "name": "demandList",
+        "type": "list",
+        "null_count": 0,
+        "example": "[{'totalQuantity': 69174, 'totalOrder': 418, 'securityId': 9356, 'symbol': 'BENH', 'securityName': 'Beni Hydropower Project Limited'}]"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/top_gainers.json",
+    "size_kb": 56.59,
+    "last_modified_npt": "2026-10-28T17:00:22.696990+05:45",
+    "root_type": "list",
+    "row_count": 280,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "BENH"
+      },
+      {
+        "name": "ltp",
+        "type": "float",
+        "null_count": 0,
+        "example": "536.7"
+      },
+      {
+        "name": "cp",
+        "type": "float",
+        "null_count": 0,
+        "example": "536.7"
+      },
+      {
+        "name": "pointChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "70.0"
+      },
+      {
+        "name": "percentageChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "15.0"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Beni Hydropower Project Limited"
+      },
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "9356"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/top_losers.json",
+    "size_kb": 10.91,
+    "last_modified_npt": "2026-10-28T17:00:22.711987+05:45",
+    "root_type": "list",
+    "row_count": 53,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "PBD88"
+      },
+      {
+        "name": "ltp",
+        "type": "float",
+        "null_count": 0,
+        "example": "1222.7"
+      },
+      {
+        "name": "cp",
+        "type": "float",
+        "null_count": 0,
+        "example": "1222.7"
+      },
+      {
+        "name": "pointChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "-37.3"
+      },
+      {
+        "name": "percentageChange",
+        "type": "float",
+        "null_count": 0,
+        "example": "-2.96"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "10% Prime Debenture 2088"
+      },
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "8097"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/top_ten_trade.json",
+    "size_kb": 57.25,
+    "last_modified_npt": "2026-10-28T17:00:22.729752+05:45",
+    "root_type": "list",
+    "row_count": 348,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "LEC"
+      },
+      {
+        "name": "shareTraded",
+        "type": "int",
+        "null_count": 0,
+        "example": "1302870"
+      },
+      {
+        "name": "closingPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "250.0"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Liberty Energy Company Limited"
+      },
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "2903"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/top_ten_transaction.json",
+    "size_kb": 57.52,
+    "last_modified_npt": "2026-10-28T17:00:22.746456+05:45",
+    "root_type": "list",
+    "row_count": 348,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "2903"
+      },
+      {
+        "name": "totalTrades",
+        "type": "int",
+        "null_count": 0,
+        "example": "2089"
+      },
+      {
+        "name": "lastTradedPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "250.0"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Liberty Energy Company Limited"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "LEC"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/top_ten_turnover.json",
+    "size_kb": 57.77,
+    "last_modified_npt": "2026-10-28T17:00:22.775254+05:45",
+    "root_type": "list",
+    "row_count": 348,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "LEC"
+      },
+      {
+        "name": "turnover",
+        "type": "float",
+        "null_count": 0,
+        "example": "325078696.1"
+      },
+      {
+        "name": "closingPrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "250.0"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Liberty Energy Company Limited"
+      },
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "2903"
+      }
+    ],
+    "source_method_writes": "collect_fast/Collector.collect_fast",
+    "refresh_tier": "fast (30s, market hours)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "data/trading_average.json",
+    "size_kb": 154.19,
+    "last_modified_npt": "2026-10-28T17:00:22.189564+05:45",
+    "root_type": "list",
+    "row_count": 460,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "securityId",
+        "type": "int",
+        "null_count": 0,
+        "example": "2790"
+      },
+      {
+        "name": "symbol",
+        "type": "str",
+        "null_count": 0,
+        "example": "ACLBSL"
+      },
+      {
+        "name": "securityName",
+        "type": "str",
+        "null_count": 0,
+        "example": "Aarambha Chautari Laghubitta Bittiya Sanstha Limited"
+      },
+      {
+        "name": "closingPriceAverage",
+        "type": "float",
+        "null_count": 0,
+        "example": "918.97"
+      },
+      {
+        "name": "totalTradedAmount",
+        "type": "float",
+        "null_count": 0,
+        "example": "91237022.6"
+      },
+      {
+        "name": "totalTradedShares",
+        "type": "int",
+        "null_count": 0,
+        "example": "99780"
+      },
+      {
+        "name": "totalTrades",
+        "type": "int",
+        "null_count": 0,
+        "example": "2597"
+      },
+      {
+        "name": "weightedAverage",
+        "type": "float",
+        "null_count": 0,
+        "example": "914.38"
+      },
+      {
+        "name": "closePrice",
+        "type": "float",
+        "null_count": 0,
+        "example": "850.0"
+      },
+      {
+        "name": "closingDate",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28"
+      }
+    ],
+    "source_method_writes": "collect_medium/Collector.collect_medium",
+    "refresh_tier": "medium (5 min)",
+    "frontend_use": "referenced in dashboard.html",
+    "status": "OK"
+  },
+  {
+    "path": "reports/collection_report_20261028_150220.json",
+    "size_kb": 5.18,
+    "last_modified_npt": "2026-10-28T15:02:20.873295+05:45",
+    "root_type": "dict",
+    "row_count": 3,
+    "row_count_info": {},
+    "fields": [
+      {
+        "name": "audit_timestamp",
+        "type": "str",
+        "null_count": 0,
+        "example": "2026-10-28T15:02:18.106424"
+      },
+      {
+        "name": "library_version",
+        "type": "str",
+        "null_count": 0,
+        "example": "0.1.4"
+      },
+      {
+        "name": "results",
+        "type": "list",
+        "null_count": 0,
+        "example": "[{'method': 'getMarketStatus', 'status': 'ok', 'type': 'dict', 'count': 3}, {'method': 'getSummary', 'status': 'ok', 'type': 'list', 'count': 4}, {'method': 'getNepseIndex', 'status': 'ok', 'type': 'list', 'count': 4}, {'method': 'getNepseSubIndices', 'status': 'ok', 'type': 'list', 'count': 13}, {'method': 'getLiveMarket', 'status': 'ok', 'type': 'list', 'count': 348}, {'method': 'getPriceVolume', 'status': 'ok', 'type': 'list', 'count': 279}, {'method': 'getSupplyDemand', 'status': 'ok', 'type': 'dict', 'count': 2}, {'method': 'getPriceVolumeHistory', 'status': 'ok', 'type': 'dict', 'count': 11}, {'method': 'getTradingAverage', 'status': 'ok', 'type': 'list', 'count': 460}, {'method': 'getCompanyList', 'status': 'ok', 'type': 'list', 'count': 650}, {'method': 'getSecurityList', 'status': 'ok', 'type': 'list', 'count': 569}, {'method': 'getCompanyIDKeyMap', 'status': 'ok', 'type': 'dict', 'count': 650}, {'method': 'getSecurityIDKeyMap', 'status': 'ok', 'type': 'dict', 'count': 569}, {'method': 'getSectorScrips', 'status': 'ok', 'type': 'dict', 'count': 14}, {'method': 'getTopGainers', 'status': 'ok', 'type': 'list', 'count': 280}, {'method': 'getTopLosers', 'status': 'ok', 'type': 'list', 'count': 53}, {'method': 'getTopTenTradeScrips', 'status': 'ok', 'type': 'list', 'count': 348}, {'method': 'getTopTenTransactionScrips', 'status': 'ok', 'type': 'list', 'count': 348}, {'method': 'getTopTenTurnoverScrips', 'status': 'ok', 'type': 'list', 'count': 348}, {'method': 'getCompanyNewsList', 'status': 'error', 'error': \"No module named 'django'\"}, {'method': 'getNewsAndAlertList', 'status': 'error', 'error': \"No module named 'django'\"}, {'method': 'getPressRelease', 'status': 'ok', 'type': 'dict', 'count': 11}, {'method': 'getNepseNotice', 'status': 'ok', 'type': 'dict', 'count': 11}, {'method': 'getHolidayList', 'status': 'ok', 'type': 'list', 'count': 40}, {'method': 'getDebentureAndBondList', 'status': 'ok', 'type': 'list', 'count': 78}, {'method': 'getDailyNepseIndexGraph', 'status': 'ok', 'type': 'list', 'count': 493}, {'method': 'getDailySensitiveIndexGraph', 'status': 'ok', 'type': 'list', 'count': 492}, {'method': 'getDailyFloatIndexGraph', 'status': 'ok', 'type': 'list', 'count': 493}, {'method': 'getDailySensitiveFloatIndexGraph', 'status': 'ok', 'type': 'list', 'count': 492}, {'method': 'getDailyBankSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 492}, {'method': 'getDailyDevelopmentBankSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 462}, {'method': 'getDailyFinanceSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 443}, {'method': 'getDailyHotelTourismSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 458}, {'method': 'getDailyHydroSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 493}, {'method': 'getDailyInvestmentSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 458}, {'method': 'getDailyLifeInsuranceSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 479}, {'method': 'getDailyManufacturingSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 491}, {'method': 'getDailyMicrofinanceSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 483}, {'method': 'getDailyMutualfundSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 372}, {'method': 'getDailyNonLifeInsuranceSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 402}, {'method': 'getDailyOthersSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 449}, {'method': 'getDailyTradingSubindexGraph', 'status': 'ok', 'type': 'list', 'count': 262}]"
+      }
+    ],
+    "source_method_writes": "unverified",
+    "refresh_tier": "unverified",
+    "frontend_use": "unused",
+    "status": "OK"
+  }
+]

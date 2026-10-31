@@ -1,0 +1,30 @@
+# syntax=docker/dockerfile:1.4
+# Matches the toolchain declared in go.mod; a lower image cannot build a
+# module that requires a newer language version.
+FROM golang:1.26-alpine AS build
+
+WORKDIR /src
+
+COPY services/api/go.mod services/api/go.sum ./services/api/
+WORKDIR /src/services/api
+RUN go mod download
+
+COPY services/api/ ./
+RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w" -o /out/server ./cmd/server \
+ && CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w" -o /out/worker ./cmd/worker \
+ && CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w" -o /out/migrate ./cmd/migrate
+
+FROM alpine:3.20
+
+RUN apk add --no-cache ca-certificates tzdata wget \
+ && adduser -D -u 10001 app
+
+WORKDIR /app
+COPY --from=build /out/server /app/server
+COPY --from=build /out/worker /app/worker
+COPY --from=build /out/migrate /app/migrate
+
+USER app
+EXPOSE 8081
+
+ENTRYPOINT ["/app/server"]

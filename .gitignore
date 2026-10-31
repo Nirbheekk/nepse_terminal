@@ -1,0 +1,23 @@
+# Secrets and local configuration
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Go build output
+/bin/
+*.exe
+*.test
+
+# Next.js
+apps/web/node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/next-env.d.ts
+apps/web/tsconfig.tsbuildinfo
+
+# Local artefacts
+/tmp/
+*.log
+var/
+reports/*.tmp

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    @apply bg-surface-base text-slate-200 antialiased;
+  }
+
+  /* Numbers are the content of this product: tabular figures keep columns from
+     jittering as quotes update. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    @apply font-mono;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-surface-line bg-surface-raised;
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between border-b border-surface-line px-4 py-2.5;
+  }
+
+  .panel-title {
+    @apply text-xs font-semibold uppercase tracking-widest text-surface-muted;
+  }
+
+  .cell {
+    @apply whitespace-nowrap px-3 py-1.5 text-right tnum;
+  }
+
+  .cell-left {
+    @apply whitespace-nowrap px-3 py-1.5 text-left;
+  }
+
+  .row {
+    @apply border-t border-surface-line/60 hover:bg-white/[0.03];
+  }
+}

@@ -1,0 +1,77 @@
+name: nepse-terminal-prod
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: nepse-postgres-prod
+    environment:
+      POSTGRES_USER: nepse
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: nepse
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_prod:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nepse -d nepse"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/Dockerfile.api
+    container_name: nepse-api-prod
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      APP_ENV: production
+      HTTP_ADDR: ":8081"
+      DATABASE_URL: postgres://nepse:${POSTGRES_PASSWORD}@postgres:5432/nepse?sslmode=disable
+      JWT_SECRET: ${JWT_SECRET}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}
+      COOKIE_SECURE: "true"
+    ports:
+      - "8081:8081"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8081/readyz"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/Dockerfile.api
+    container_name: nepse-worker-prod
+    depends_on:
+      api:
+        condition: service_started
+    command: ["/app/worker", "-role", "promote", "-interval", "5m"]
+    environment:
+      APP_ENV: production
+      DATABASE_URL: postgres://nepse:${POSTGRES_PASSWORD}@postgres:5432/nepse?sslmode=disable
+      JWT_SECRET: ${JWT_SECRET}
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/Dockerfile.web
+      args:
+        NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL}
+    container_name: nepse-web-prod
+    depends_on:
+      api:
+        condition: service_started
+    ports:
+      - "3100:3100"
+    restart: unless-stopped
+
+volumes:
+  pgdata_prod:

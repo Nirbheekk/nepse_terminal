@@ -1,0 +1,1432 @@
+openapi: 3.1.0
+info:
+  title: NEPSE Platform API
+  version: 0.1.0
+  description: |
+    Versioned read API for the NEPSE terminal, plus cookie-based authentication.
+
+    Every response uses the same envelope: `data`, `meta`, `error`. Money and index
+    values are JSON strings because they are stored as PostgreSQL NUMERIC and JSON
+    has no exact decimal type — converting through a float would lose precision.
+
+    Source data is public but its redistribution terms are unverified
+    (`license_class: public_unverified`), which is reported in `meta` on every
+    market response.
+servers:
+  - url: http://localhost:8081
+    description: Local API
+  - url: http://localhost:3100
+    description: Through the Next.js same-origin proxy
+security:
+  - cookieAuth: []
+tags:
+  - name: ops
+  - name: market
+  - name: companies
+  - name: auth
+  - name: financials
+  - name: corporate_actions
+  - name: portfolios
+  - name: analytics
+  - name: disclosures
+  - name: research
+  - name: institutional
+  - name: developer
+
+paths:
+  /healthz:
+    get:
+      tags: [ops]
+      summary: Liveness probe
+      security: []
+      responses:
+        "200": { description: Process is running }
+  /readyz:
+    get:
+      tags: [ops]
+      summary: Readiness probe (database + migrations)
+      security: []
+      responses:
+        "200": { description: Ready }
+        "503": { description: Database unreachable }
+  /api/v1/health:
+    get:
+      tags: [ops]
+      summary: Data-plane health (counts, latest session, schema version)
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Envelope" }
+  /api/v1/market/overview:
+    get:
+      tags: [market]
+      summary: Overview page in one consistent payload (summary, status, movers, indices)
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Envelope" }
+        "404": { description: No summary stored }
+  /api/v1/market/status:
+    get:
+      tags: [market]
+      summary: Exchange open/closed state as reported by the feed
+      security: []
+      responses:
+        "200": { description: OK; state is "unknown" when no status was captured }
+  /api/v1/sectors:
+    get:
+      tags: [companies]
+      summary: Sectors with registered issuer counts, for filter menus
+      security: []
+      responses:
+        "200": { description: OK }
+  /api/v1/market/summary:
+    get:
+      tags: [market]
+      summary: Latest session summary with capitalisation coverage
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Envelope" }
+        "404": { description: No summary stored }
+  /api/v1/market/top-movers:
+    get:
+      tags: [market]
+      summary: Ranked securities for the latest session
+      security: []
+      parameters:
+        - name: type
+          in: query
+          schema: { type: string, enum: [gainers, losers, turnover, volume], default: gainers }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 50, default: 10 }
+      responses:
+        "200": { description: OK }
+        "400": { description: Invalid parameter }
+  /api/v1/indices:
+    get:
+      tags: [market]
+      summary: Index definitions with latest observation
+      security: []
+      responses:
+        "200": { description: OK }
+  /api/v1/indices/{code}/history:
+    get:
+      tags: [market]
+      summary: Historical daily closes for an index
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema: { type: string }
+        - name: from
+          in: query
+          schema: { type: string, format: date }
+        - name: to
+          in: query
+          schema: { type: string, format: date }
+        - name: granularity
+          in: query
+          schema: { type: string, enum: [daily], default: daily }
+      responses:
+        "200": { description: OK }
+  /api/v1/indices/{code}/intraday:
+    get:
+      tags: [market]
+      summary: Actual session intraday points for an index
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema: { type: string }
+        - name: date
+          in: query
+          schema: { type: string, format: date }
+      responses:
+        "200": { description: OK }
+  /api/v1/sectors/comparison:
+    get:
+      tags: [market]
+      summary: Sector performance comparison across periods
+      parameters:
+        - name: period
+          in: query
+          schema: { type: string, enum: [1d, 5d, 30d, 90d, 1y], default: 1d }
+      responses:
+        "200": { description: OK }
+  /api/v1/market/breadth:
+    get:
+      tags: [market]
+      summary: Market breadth, advance/decline ratio and return distributions
+      security: []
+      responses:
+        "200": { description: OK }
+  /api/v1/charts/ohlcv:
+    get:
+      tags: [charts]
+      summary: Historical OHLCV bars. Minute intervals require genuine minute data or return DATA_UNAVAILABLE.
+      security: []
+      parameters:
+        - name: symbol
+          in: query
+          required: true
+          schema: { type: string }
+        - name: interval
+          in: query
+          schema: { type: string, enum: [1m, 5m, 15m, 30m, 1h, 1d, 1w, 1M], default: 1d }
+        - name: from
+          in: query
+          schema: { type: string, format: date }
+        - name: to
+          in: query
+          schema: { type: string, format: date }
+      responses:
+        "200": { description: OK }
+        "404": { description: Data unavailable for minute interval or symbol not found }
+  /api/v1/charts/indicators:
+    get:
+      tags: [charts]
+      summary: Calculated technical indicators with mandatory warmup_bars
+      security: []
+      parameters:
+        - name: symbol
+          in: query
+          required: true
+          schema: { type: string }
+        - name: interval
+          in: query
+          schema: { type: string, default: 1d }
+        - name: set
+          in: query
+          description: Comma-separated indicator specs (e.g. sma:20,ema:50,rsi:14,macd:12:26:9,bb:20:2)
+          schema: { type: string, default: "sma:20,ema:50,rsi:14" }
+      responses:
+        "200": { description: OK }
+  /api/v1/screener/metrics:
+    get:
+      tags: [screener]
+      summary: Filter vocabulary plus how much of it the stored data can answer
+      responses:
+        "200": { description: OK, content: { application/json: { schema: { $ref: "#/components/schemas/Envelope" } } } }
+  /api/v1/screener/run:
+    post:
+      tags: [screener]
+      summary: Run an unsaved screening rule
+      description: |
+        The rule is validated before it reaches SQL. A metric or operator outside
+        the published registry is a 400, never a query. `coverage` travels with the
+        result so an empty list can be told apart from missing history.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ScreenRule" }
+      responses:
+        "200": { description: OK }
+        "400": { description: Rule failed validation }
+        "401": { description: Not authenticated }
+  /api/v1/screener/screens:
+    get:
+      tags: [screener]
+      summary: List the caller's saved screens
+      responses:
+        "200": { description: OK }
+        "401": { description: Not authenticated }
+    post:
+      tags: [screener]
+      summary: Save a rule under a name
+      responses:
+        "201": { description: Created }
+        "409": { description: Name already used by this account }
+  /api/v1/screener/screens/{id}:
+    get:
+      tags: [screener]
+      summary: Read one saved screen
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not found for this account }
+    put:
+      tags: [screener]
+      summary: Replace a saved screen
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not found for this account }
+    delete:
+      tags: [screener]
+      summary: Delete a saved screen
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: Deleted }
+        "404": { description: Not found for this account }
+  /api/v1/screener/screens/{id}/run:
+    post:
+      tags: [screener]
+      summary: Run a saved screen without resending its definition
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not found for this account }
+  /api/v1/watchlists:
+    get:
+      tags: [watchlists]
+      summary: List the caller's watchlists with members and latest quotes
+      responses:
+        "200": { description: OK }
+    post:
+      tags: [watchlists]
+      summary: Create a watchlist
+      responses:
+        "201": { description: Created }
+        "409": { description: Name already used by this account }
+  /api/v1/watchlists/{id}:
+    get:
+      tags: [watchlists]
+      summary: Read one watchlist
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not found for this account }
+    put:
+      tags: [watchlists]
+      summary: Rename a watchlist
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+    delete:
+      tags: [watchlists]
+      summary: Delete a watchlist and its members
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: Deleted }
+  /api/v1/watchlists/{id}/items:
+    post:
+      tags: [watchlists]
+      summary: Add a symbol (cap 500 per list)
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "201": { description: Added }
+        "404": { description: Unknown watchlist or unknown symbol }
+        "409": { description: Watchlist is full }
+  /api/v1/watchlists/{id}/items/{symbol}:
+    delete:
+      tags: [watchlists]
+      summary: Remove a symbol
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string, format: uuid } }
+        - { name: symbol, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Removed }
+        "404": { description: Not in this watchlist }
+  /api/v1/alerts:
+    get:
+      tags: [alerts]
+      summary: List the caller's alert rules
+      responses:
+        "200": { description: OK }
+    post:
+      tags: [alerts]
+      summary: Create an alert rule
+      description: A rule names a metric from the screener registry and a threshold.
+      responses:
+        "201": { description: Created }
+        "400": { description: Rule failed validation }
+  /api/v1/alerts/{id}:
+    put:
+      tags: [alerts]
+      summary: Replace an alert rule
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: OK }
+        "404": { description: Not found for this account }
+    delete:
+      tags: [alerts]
+      summary: Delete an alert rule with its events and deliveries
+      parameters: [{ name: id, in: path, required: true, schema: { type: string, format: uuid } }]
+      responses:
+        "200": { description: Deleted }
+  /api/v1/alerts/events:
+    get:
+      tags: [alerts]
+      summary: Event history, newest first (deduplicated observations)
+      parameters: [{ name: limit, in: query, schema: { type: integer, maximum: 500 } }]
+      responses:
+        "200": { description: OK }
+  /api/v1/alerts/deliveries:
+    get:
+      tags: [alerts]
+      summary: Delivery history with attempts, errors and next attempt time
+      parameters: [{ name: limit, in: query, schema: { type: integer, maximum: 500 } }]
+      responses:
+        "200": { description: OK }
+  /api/v1/alerts/evaluate:
+    post:
+      tags: [alerts]
+      summary: Run the caller's own rules now
+      description: |
+        Evaluates only rules owned by the authenticated subject. The background
+        worker runs every tenant's rules on a schedule; this endpoint exists so a
+        user can confirm a rule fires without waiting for the next cycle.
+      responses:
+        "200": { description: Cycle summary }
+
+  /api/v1/charts/layouts:
+    get:
+      tags: [charts]
+      summary: List user or shared chart layouts
+      responses:
+        "200": { description: OK }
+    post:
+      tags: [charts]
+      summary: Save a chart layout configuration
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, symbol]
+              properties:
+                name: { type: string }
+                symbol: { type: string }
+                interval: { type: string }
+                chart_type: { type: string }
+                indicators: { type: array, items: { type: object } }
+                settings: { type: object }
+      responses:
+        "200": { description: OK }
+  /api/v1/charts/layouts/{id}:
+    delete:
+      tags: [charts]
+      summary: Delete a chart layout by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: OK }
+  /api/v1/floorsheet:
+    get:
+      tags: [market]
+      summary: Keyset-paginated trades, newest contract first
+      security: []
+      parameters:
+        - name: date
+          in: query
+          schema: { type: string, format: date }
+        - name: symbol
+          in: query
+          schema: { type: string }
+        - name: cursor
+          in: query
+          description: Value of meta.next_cursor from the previous page
+          schema: { type: string }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 500, default: 50 }
+      responses:
+        "200": { description: OK }
+  /api/v1/companies:
+    get:
+      tags: [companies]
+      summary: Listed companies with latest quote, filters, sorting and paging
+      security: []
+      parameters:
+        - name: q
+          in: query
+          schema: { type: string, maxLength: 64 }
+        - name: sector
+          in: query
+          description: Sector code from /api/v1/sectors
+          schema: { type: string, pattern: "^[a-z0-9_]{1,64}$" }
+        - name: instrument
+          in: query
+          schema: { type: string, maxLength: 32 }
+        - name: status
+          in: query
+          schema: { type: string, enum: ["", active, inactive] }
+        - name: sort
+          in: query
+          schema:
+            type: string
+            enum: [symbol, name, sector, close, change, volume, turnover, transactions, market_cap, float_market_cap, trading_date]
+            default: symbol
+        - name: order
+          in: query
+          schema: { type: string, enum: [asc, desc], default: asc }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 200, default: 50 }
+        - name: offset
+          in: query
+          schema: { type: integer, minimum: 0, default: 0 }
+      responses:
+        "200": { description: OK; meta.total is the unpaged match count, meta.coverage the capitalisation coverage }
+        "400": { description: Unknown sort, order, sector or out-of-range limit }
+  /api/v1/companies/export.csv:
+    get:
+      tags: [companies]
+      summary: CSV export of the filtered company screen
+      description: |
+        Streams the same rows as /api/v1/companies with the same filters and sort,
+        stamped with generated_at, session, freshness and licence. The licence is
+        public_unverified and redistribution is prohibited.
+      security: []
+      responses:
+        "200":
+          description: CSV with a commented header block
+          content:
+            text/csv:
+              schema: { type: string }
+        "400": { description: Invalid filter }
+  /api/v1/companies/{symbol}:
+    get:
+      tags: [companies]
+      summary: Company profile
+      security: []
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string, pattern: "^[A-Z0-9][A-Z0-9._-]{0,19}$" }
+      responses:
+        "200": { description: OK }
+        "404": { description: Unknown symbol }
+  /api/v1/companies/{symbol}/prices.csv:
+    get:
+      tags: [companies]
+      summary: CSV export of one security's daily price history
+      security: []
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: CSV with a commented header block
+          content:
+            text/csv:
+              schema: { type: string }
+  /api/v1/companies/{symbol}/prices:
+    get:
+      tags: [companies]
+      summary: Daily OHLCV history, oldest first
+      security: []
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 1000, default: 120 }
+      responses:
+        "200": { description: OK }
+
+  /api/v1/auth/register:
+    post:
+      tags: [auth]
+      summary: Create an account and start a session
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password, display_name]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string, minLength: 10, maxLength: 128 }
+                display_name: { type: string }
+      responses:
+        "201": { description: Created; sets np_at, np_rt, np_csrf cookies }
+        "409": { description: Email already registered }
+        "422": { description: Validation failed }
+  /api/v1/auth/login:
+    post:
+      tags: [auth]
+      summary: Sign in and start a session
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string }
+                password: { type: string }
+      responses:
+        "200": { description: Signed in }
+        "401": { description: Invalid credentials }
+  /api/v1/auth/refresh:
+    post:
+      tags: [auth]
+      summary: Rotate the refresh token and issue a new access token
+      security: []
+      responses:
+        "200": { description: Rotated }
+        "401": { description: Session invalid or reused }
+  /api/v1/auth/logout:
+    post:
+      tags: [auth]
+      summary: Revoke the current session and clear cookies
+      responses:
+        "200": { description: Signed out }
+        "403": { description: CSRF token missing or mismatched }
+  /api/v1/auth/me:
+    get:
+      tags: [auth]
+      summary: Current account
+      responses:
+        "200": { description: OK }
+        "401": { description: Not authenticated }
+  /api/v1/auth/sessions:
+    get:
+      tags: [auth]
+      summary: Active sessions for the current account
+      responses:
+        "200": { description: OK }
+  /api/v1/auth/sessions/{id}:
+    delete:
+      tags: [auth]
+      summary: Revoke one session
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Revoked }
+        "403": { description: CSRF token missing or mismatched }
+
+  /api/v1/companies/{symbol}/financials:
+    get:
+      tags: [financials]
+      summary: Normalized multi-period financial statements (Balance Sheet, Income Statement, Cash Flow)
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: Multi-period statements }
+    post:
+      tags: [financials]
+      summary: Ingest normalized financial statement
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "201": { description: Ingested and validated }
+
+  /api/v1/companies/{symbol}/ratios:
+    get:
+      tags: [financials]
+      summary: Reporting-period-aware financial ratios
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+        - name: as_of
+          in: query
+          schema: { type: string, format: date }
+        - name: price
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Calculated ratios }
+
+  /api/v1/corporate-actions:
+    get:
+      tags: [corporate_actions]
+      summary: Query corporate actions across exchange
+      parameters:
+        - name: symbol
+          in: query
+          schema: { type: string }
+        - name: action_type
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Corporate actions list }
+
+  /api/v1/companies/{symbol}/corporate-actions:
+    get:
+      tags: [corporate_actions]
+      summary: Corporate actions for a security
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: Corporate actions list }
+    post:
+      tags: [corporate_actions]
+      summary: Register corporate action
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "201": { description: Corporate action created }
+
+  /api/v1/companies/{symbol}/adjusted-prices:
+    get:
+      tags: [corporate_actions]
+      summary: Corporate-action adjusted historical prices
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+        - name: policy
+          in: query
+          schema: { type: string, enum: [unadjusted, split_bonus, split_bonus_rights, total_return] }
+        - name: from
+          in: query
+          schema: { type: string, format: date }
+        - name: to
+          in: query
+          schema: { type: string, format: date }
+      responses:
+        "200": { description: Adjusted bars }
+
+  /api/v1/portfolios:
+    get:
+      tags: [portfolios]
+      summary: List user portfolios
+      responses:
+        "200": { description: User portfolios }
+        "401": { description: Unauthenticated }
+    post:
+      tags: [portfolios]
+      summary: Create portfolio tracker (decoupled from brokerage execution)
+      responses:
+        "201": { description: Portfolio created }
+        "401": { description: Unauthenticated }
+
+  /api/v1/portfolios/{id}:
+    get:
+      tags: [portfolios]
+      summary: Get portfolio state, positions, market values and P&L
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Portfolio details }
+        "404": { description: Not found }
+    delete:
+      tags: [portfolios]
+      summary: Delete portfolio
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Deleted }
+
+  /api/v1/portfolios/{id}/transactions:
+    get:
+      tags: [portfolios]
+      summary: Get portfolio transaction ledger
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: limit
+          in: query
+          schema: { type: integer }
+        - name: offset
+          in: query
+          schema: { type: integer }
+      responses:
+        "200": { description: Transaction ledger }
+    post:
+      tags: [portfolios]
+      summary: Record portfolio transaction (BUY, SELL, DIVIDEND, RIGHTS, etc.)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "201": { description: Transaction processed }
+
+  /api/v1/portfolios/{id}/lots:
+    get:
+      tags: [portfolios]
+      summary: Get FIFO tax lots
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: symbol
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Tax lots }
+
+  /api/v1/portfolios/{id}/analytics:
+    get:
+      tags: [analytics]
+      summary: Benchmark performance (TWR, MWR/IRR) and risk analytics (Beta, Alpha, Sharpe, Sortino, VaR, MDD)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: risk_free_rate
+          in: query
+          schema: { type: string }
+        - name: from
+          in: query
+          schema: { type: string, format: date }
+        - name: to
+          in: query
+          schema: { type: string, format: date }
+      responses:
+        "200": { description: Risk and benchmark analytics }
+
+  /api/v1/disclosures:
+    get:
+      tags: [disclosures]
+      summary: List authorized disclosures from NEPSE, SEBON, NRB and companies
+      parameters:
+        - name: authority
+          in: query
+          schema: { type: string, enum: [NEPSE, SEBON, NRB, COMPANY] }
+        - name: symbol
+          in: query
+          schema: { type: string }
+        - name: category
+          in: query
+          schema: { type: string }
+        - name: limit
+          in: query
+          schema: { type: integer }
+        - name: offset
+          in: query
+          schema: { type: integer }
+      responses:
+        "200": { description: List of disclosures with attachments and licensing metadata }
+    post:
+      tags: [disclosures]
+      summary: Ingest authorized disclosure with attachments
+      responses:
+        "201": { description: Disclosure created }
+
+  /api/v1/disclosures/{id}:
+    get:
+      tags: [disclosures]
+      summary: Get single disclosure by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Disclosure details }
+        "404": { description: Not found }
+
+  /api/v1/research/query:
+    post:
+      tags: [research]
+      summary: Evidence-grounded AI research assistant with tripartite facts, calculations, and interpretations
+      responses:
+        "200": { description: Evidence-grounded research response with source citations }
+        "400": { description: Invalid query }
+        "401": { description: Unauthorized (portfolio scope without auth) }
+        "403": { description: Forbidden (cross-tenant portfolio access) }
+
+  /api/v1/workspaces:
+    get:
+      tags: [institutional]
+      summary: List institutional workspaces (organizations) for the authenticated user
+      responses:
+        "200": { description: List of organizations }
+        "401": { description: Unauthenticated }
+    post:
+      tags: [institutional]
+      summary: Create institutional organization workspace
+      responses:
+        "201": { description: Organization created }
+        "401": { description: Unauthenticated }
+
+  /api/v1/workspaces/{orgId}/members:
+    get:
+      tags: [institutional]
+      summary: List members and RBAC roles of an organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Members list }
+        "403": { description: Forbidden }
+    post:
+      tags: [institutional]
+      summary: Add or update organization member role (requires org_admin)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Member added }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/portfolios:
+    get:
+      tags: [institutional]
+      summary: List all portfolios owned by the organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Org portfolios }
+        "403": { description: Forbidden }
+    post:
+      tags: [institutional]
+      summary: Create portfolio scoped to organization
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "201": { description: Portfolio created }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/notes:
+    get:
+      tags: [institutional]
+      summary: List research notes in institutional workspace
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: symbol
+          in: query
+          schema: { type: string }
+        - name: status
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Research notes }
+        "403": { description: Forbidden }
+    post:
+      tags: [institutional]
+      summary: Create research note
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "201": { description: Note created }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/approvals:
+    get:
+      tags: [institutional]
+      summary: List pending or past approval requests
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: status
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Approval requests }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/approvals/{id}/review:
+    post:
+      tags: [institutional]
+      summary: Review approval request (compliance officer / org admin only, anti-self-approval enforced)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Review processed }
+        "403": { description: Forbidden (including self-approval attempt) }
+
+  /api/v1/workspaces/{orgId}/portfolios/{portfolioId}/liquidity:
+    get:
+      tags: [institutional]
+      summary: Liquidity risk analysis (ADV, days to liquidate, liquidity tiers, slippage estimate)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: portfolioId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Liquidity report }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/portfolios/{portfolioId}/concentration:
+    get:
+      tags: [institutional]
+      summary: Concentration risk analysis (Top-1/3/5/10, HHI, SEBON single stock & sector limit breaches)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: portfolioId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Concentration report }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/portfolios/{portfolioId}/stress:
+    post:
+      tags: [institutional]
+      summary: Multi-factor stress testing and scenario analysis
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: portfolioId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Scenario stress testing result }
+        "403": { description: Forbidden }
+
+  /api/v1/workspaces/{orgId}/portfolios/{portfolioId}/export.csv:
+    get:
+      tags: [institutional]
+      summary: Export institutional portfolio positions and risk metrics to CSV (gated by PermReportExport)
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+        - name: portfolioId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: CSV export }
+        "403": { description: Forbidden if role lacks PermReportExport }
+
+  /api/v1/workspaces/{orgId}/audit:
+    get:
+      tags: [institutional]
+      summary: List immutable audit trail events
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Audit logs }
+        "403": { description: Forbidden }
+
+  /api/v1/developer/licensing-matrix:
+    get:
+      tags: [developer]
+      summary: Retrieve data provider licensing terms and redistribution policies
+      security: []
+      responses:
+        "200":
+          description: Data licensing matrix mapping datasets to rights, permitted redistribution and attribution requirements
+
+  /api/v1/developer/keys:
+    get:
+      tags: [developer]
+      summary: List issued developer API keys for authenticated caller
+      responses:
+        "200": { description: List of developer keys }
+        "401": { description: Unauthenticated }
+    post:
+      tags: [developer]
+      summary: Generate a new cryptographic developer API key (np_live_...)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: { type: string }
+                tier: { type: string, enum: [free, pro, institutional, enterprise] }
+                org_id: { type: string, format: uuid }
+      responses:
+        "201": { description: Key created; returns plaintext api_secret once }
+        "400": { description: Invalid parameters }
+        "401": { description: Unauthenticated }
+
+  /api/v1/developer/keys/{id}:
+    delete:
+      tags: [developer]
+      summary: Revoke an issued developer API key
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Key revoked }
+        "401": { description: Unauthenticated }
+        "404": { description: Key not found }
+
+  /api/v1/exports:
+    get:
+      tags: [developer]
+      summary: List data export jobs
+      parameters:
+        - name: limit
+          in: query
+          schema: { type: integer, default: 20 }
+        - name: offset
+          in: query
+          schema: { type: integer, default: 0 }
+      responses:
+        "200": { description: List of export jobs }
+        "401": { description: Unauthenticated }
+    post:
+      tags: [developer]
+      summary: Submit a dataset export request (CSV, JSON, Parquet)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [dataset]
+              properties:
+                dataset: { type: string, enum: [companies, daily_ohlcv, floorsheet, financials, disclosures, analytics, market_live] }
+                format: { type: string, enum: [csv, json, parquet], default: csv }
+                org_id: { type: string, format: uuid }
+                parameters: { type: object }
+      responses:
+        "201": { description: Export job created and queued }
+        "400": { description: Invalid request }
+        "401": { description: Unauthenticated }
+        "403": { description: Bulk redistribution prohibited by licensing terms }
+
+  /api/v1/exports/{id}:
+    get:
+      tags: [developer]
+      summary: Get status, checksum and row count of an export job
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Export job details }
+        "401": { description: Unauthenticated }
+        "404": { description: Job not found }
+
+  /api/v1/exports/{id}/download:
+    get:
+      tags: [developer]
+      summary: Download formatted export data file with license attribution headers
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200":
+          description: File download stream (text/csv, application/json, or application/octet-stream for Parquet)
+          headers:
+            X-Licensing-Class: { schema: { type: string } }
+            X-Attribution-Notice: { schema: { type: string } }
+        "400": { description: Job not ready }
+        "401": { description: Unauthenticated }
+        "404": { description: Job not found }
+
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: np_at
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+  schemas:
+    Envelope:
+      type: object
+      required: [data, meta, error]
+      properties:
+        data: {}
+        meta: { $ref: "#/components/schemas/Meta" }
+        error:
+          oneOf:
+            - { $ref: "#/components/schemas/APIError" }
+            - { type: "null" }
+    Meta:
+      type: object
+      properties:
+        request_id: { type: string }
+        as_of: { type: string, description: RFC 3339 timestamp of the underlying data }
+        source: { type: string }
+        license_class:
+          type: string
+          enum: [official_verified, third_party_licensed, public_unverified, derived, restricted, unavailable]
+        freshness:
+          type: string
+          description: |
+            live = captured under 2 minutes ago while open; delayed = under 15
+            minutes; final = the exchange is closed and this stored session will
+            not change again; stale = a capture is older than the session it
+            should describe.
+          enum: [live, delayed, final, stale, unknown]
+        freshness_reason: { type: string }
+        market_state: { type: string, enum: [open, preopen, closed, unknown] }
+        session_date: { type: string, format: date }
+        age_seconds: { type: integer }
+        calculation: { type: string }
+        coverage: { $ref: "#/components/schemas/Coverage" }
+        total: { type: integer }
+        next_cursor: { type: string }
+    Coverage:
+      type: object
+      properties:
+        covered: { type: integer }
+        eligible: { type: integer }
+        unit: { type: string }
+    APIError:
+      type: object
+      required: [code, message, retryable]
+      properties:
+        code: { type: string }
+        message: { type: string }
+        retryable: { type: boolean }
+        details: {}
+    Summary:
+      type: object
+      properties:
+        trading_date: { type: string, format: date }
+        nepse_index: { type: string }
+        point_change: { type: string }
+        percent_change: { type: string }
+        turnover: { type: string }
+        transactions: { type: integer, format: int64 }
+        traded_securities: { type: integer }
+        advanced: { type: integer }
+        declined: { type: integer }
+        unchanged: { type: integer }
+        market_cap: { type: string }
+        float_market_cap: { type: string }
+        cap_method: { type: string }
+    Mover:
+      type: object
+      properties:
+        symbol: { type: string }
+        name: { type: string }
+        close: { type: string }
+        previous_close: { type: string }
+        change: { type: string }
+        percent_change: { type: string }
+        volume: { type: string }
+        turnover: { type: string }
+    Company:
+      type: object
+      properties:
+        symbol: { type: string }
+        name: { type: string }
+        sector: { type: string }
+        sector_code: { type: string }
+        status: { type: string }
+        instrument: { type: string }
+        close: { type: string }
+        previous_close: { type: string }
+        change: { type: string }
+        percent_change: { type: string }
+        volume: { type: string, description: Session quantity traded }
+        turnover: { type: string }
+        transactions: { type: string }
+        listed_shares: { type: string }
+        public_shares: { type: string }
+        market_cap:
+          type: string
+          description: Close multiplied by listed shares, or the reported figure when shares are unknown
+        market_cap_method:
+          type: string
+          enum: [close_x_listed_shares, reported_at_previous_close, unavailable]
+        market_cap_reported:
+          type: string
+          description: The exchange's own marketCapitalization field; computed at the previous close
+        market_cap_reported_basis: { type: string, enum: [previous_close] }
+        float_market_cap: { type: string }
+        float_market_cap_method:
+          type: string
+          enum: [close_x_public_shares, unavailable]
+        trading_date: { type: string, format: date }
+        ingested_at: { type: string, format: date-time }
+    MarketStatus:
+      type: object
+      properties:
+        state: { type: string, enum: [open, preopen, closed, unknown] }
+        reported_status: { type: string, description: Verbatim value from the feed }
+        as_of: { type: [string, "null"], format: date-time }
+        observed_at: { type: [string, "null"], format: date-time }
+        age_seconds: { type: [integer, "null"] }
+        session_date: { type: string, format: date }
+        is_open: { type: boolean }
+        is_current_session: { type: boolean }
+    Overview:
+      type: object
+      properties:
+        summary: { $ref: "#/components/schemas/Summary" }
+        status:
+          oneOf:
+            - { $ref: "#/components/schemas/MarketStatus" }
+            - { type: "null" }
+        movers:
+          type: object
+          properties:
+            gainers: { type: array, items: { $ref: "#/components/schemas/Mover" } }
+            losers: { type: array, items: { $ref: "#/components/schemas/Mover" } }
+            turnover: { type: array, items: { $ref: "#/components/schemas/Mover" } }
+        indices: { type: array, items: { type: object } }
+        generated_at: { type: string, format: date-time }
+    Bar:
+      type: object
+      properties:
+        trading_date: { type: string, format: date }
+        open: { type: string }
+        high: { type: string }
+        low: { type: string }
+        close: { type: string }
+        previous_close: { type: string }
+        volume: { type: string }
+        turnover: { type: string }
+        transactions: { type: string }
+        market_cap: { type: string }
+    Trade:
+      type: object
+      properties:
+        contract_id: { type: string }
+        trading_date: { type: string, format: date }
+        symbol: { type: string }
+        buyer_broker: { type: [string, "null"] }
+        seller_broker: { type: [string, "null"] }
+        quantity: { type: string }
+        rate: { type: string }
+        amount: { type: string }
+        executed_at: { type: [string, "null"], format: date-time }
+    ScreenCondition:
+      type: object
+      required: [metric, op, value]
+      properties:
+        metric: { type: string, description: A key from /api/v1/screener/metrics }
+        op: { type: string, enum: [gt, gte, lt, lte, eq, between] }
+        value: { type: number }
+        value_to: { type: number, description: Required only when op is between }
+        min_bars: { type: integer, description: Overrides the metric's history requirement }
+    ScreenRule:
+      type: object
+      properties:
+        universe:
+          type: object
+          properties:
+            sectors: { type: array, items: { type: string } }
+            instruments: { type: array, items: { type: string } }
+            statuses: { type: array, items: { type: string } }
+            symbols: { type: array, items: { type: string } }
+            search: { type: string }
+        all:
+          type: array
+          items: { $ref: "#/components/schemas/ScreenCondition" }
+        any:
+          type: array
+          items: { $ref: "#/components/schemas/ScreenCondition" }
+        sort: { type: string, description: symbol, name, sector or a metric key }
+        order: { type: string, enum: [asc, desc] }
+        limit: { type: integer, minimum: 1, maximum: 500 }
+        min_bars: { type: integer, description: Gate every technical metric at this history depth }
+    User:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        email: { type: string }
+        display_name: { type: string }
+        roles:
+          type: array
+          items: { type: string }
+        created_at: { type: string, format: date-time }
+    DeveloperKey:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        user_id: { type: string, format: uuid }
+        org_id: { type: string, format: uuid }
+        name: { type: string }
+        prefix: { type: string, example: "np_live_8f3a12" }
+        tier: { type: string, enum: [free, pro, institutional, enterprise] }
+        rate_limit_rpm: { type: integer }
+        monthly_quota: { type: integer }
+        requests_this_month: { type: integer }
+        quota_reset_at: { type: string, format: date-time }
+        allowed_ips: { type: array, items: { type: string } }
+        created_at: { type: string, format: date-time }
+    ExportJob:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        user_id: { type: string, format: uuid }
+        org_id: { type: string, format: uuid }
+        dataset: { type: string }
+        format: { type: string, enum: [csv, json, parquet] }
+        status: { type: string, enum: [pending, processing, completed, failed, cancelled] }
+        row_count: { type: integer }
+        file_size_bytes: { type: integer }
+        file_name: { type: string }
+        sha256: { type: string }
+        license_class: { type: string }
+        attribution: { type: string }
