@@ -136,21 +136,22 @@ function parseEnvelope<T extends z.ZodTypeAny>(
       requestId,
     );
   }
-  if (parsed.data.error) {
+  const payload = parsed.data as any;
+  if (payload.error) {
     throw new ApiError(
-      parsed.data.error.message,
+      payload.error.message,
       status,
-      parsed.data.error.code,
-      parsed.data.meta.request_id,
+      payload.error.code,
+      payload.meta?.request_id,
     );
   }
-  if (parsed.data.data === null || parsed.data.data === undefined) {
+  if (payload.data === null || payload.data === undefined) {
     if (allowNull) {
-      return { data: null, meta: MetaSchema.parse(parsed.data.meta) };
+      return { data: null, meta: MetaSchema.parse(payload.meta) };
     }
     throw new ApiError("The API returned no data.", status, "NO_DATA", requestId);
   }
-  return { data: parsed.data.data, meta: MetaSchema.parse(parsed.data.meta) };
+  return { data: payload.data, meta: MetaSchema.parse(payload.meta) };
 }
 
 /**

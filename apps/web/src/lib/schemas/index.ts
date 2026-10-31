@@ -362,7 +362,7 @@ export type IndicatorPoint = z.infer<typeof IndicatorPointSchema>;
 
 export const IndicatorResultSchema = z.object({
   indicator: z.string(),
-  params: z.record(z.any()),
+  params: z.record(z.string(), z.any()),
   warmup_bars: z.number(),
   series: z.array(IndicatorPointSchema),
 });
@@ -411,7 +411,7 @@ export const MarketBreadthSchema = z.object({
   unchanged: z.number(),
   total: z.number(),
   advance_ratio: z.number(),
-  distribution: z.record(z.number()),
+  distribution: z.record(z.string(), z.number()),
   // The API sends null, not an absent key, when no sector breakdown was
   // computed. `optional()` only accepts undefined, so this is nullish and
   // normalised to undefined for the renderers.

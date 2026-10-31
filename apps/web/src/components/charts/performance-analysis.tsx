@@ -57,7 +57,7 @@ export function PerformanceAnalysis({ initialBreadth, initialSectors = [] }: Per
     };
   }, [breadth]);
 
-  const distribution = breadth?.distribution || {
+  const distribution = (breadth?.distribution || {
     lt_minus_5: 0,
     minus_5_to_2: 0,
     minus_2_to_0: 0,
@@ -65,7 +65,7 @@ export function PerformanceAnalysis({ initialBreadth, initialSectors = [] }: Per
     plus_0_to_2: 0,
     plus_2_to_5: 0,
     gt_plus_5: 0,
-  };
+  }) as any;
 
   const distBuckets = [
     { label: "< -5%", count: distribution.lt_minus_5 || 0, color: "bg-red-700" },
