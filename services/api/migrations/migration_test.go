@@ -66,7 +66,7 @@ func TestMigrationFilesCompletenessAndPairing(t *testing.T) {
 	}
 
 	// Verify minimum expected migration count (14 migration pairs)
-	const expectedMinMigrations = 18
+	const expectedMinMigrations = 19
 	if len(upFiles) < expectedMinMigrations {
 		t.Errorf("expected at least %d migrations, found %d", expectedMinMigrations, len(upFiles))
 	}

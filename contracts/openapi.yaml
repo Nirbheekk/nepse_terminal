@@ -687,6 +687,86 @@ paths:
       summary: Mergers and acquisitions
       responses:
         "200": { description: Mergers list }
+  /api/v1/mutual-funds/{id}:
+    get:
+      tags: [mutual_funds]
+      summary: Mutual fund detail
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Fund detail }
+
+  /api/v1/mutual-funds/{id}/nav/history:
+    get:
+      tags: [mutual_funds]
+      summary: NAV history
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: NAV history }
+
+  /api/v1/mutual-funds/{id}/holdings:
+    get:
+      tags: [mutual_funds]
+      summary: Portfolio holdings
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Holdings list }
+
+  /api/v1/mutual-funds/{id}/allocations:
+    get:
+      tags: [mutual_funds]
+      summary: Sector and asset allocations
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Allocations }
+
+  /api/v1/mutual-funds/{id}/financials:
+    get:
+      tags: [mutual_funds]
+      summary: Fund financials
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Fund financials }
+
+  /api/v1/mutual-funds/{id}/performance:
+    get:
+      tags: [mutual_funds]
+      summary: Fund performance metrics
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: Performance metrics }
+
+  /api/v1/data/mutual-fund-coverage:
+    get:
+      tags: [data]
+      summary: Mutual fund data coverage
+      responses:
+        "200": { description: Coverage counts }
+
+
 
   /api/v1/company-meetings:
     get:

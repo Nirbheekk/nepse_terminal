@@ -1,0 +1,6 @@
+{
+  "holdings": [
+    {"fund_code": "NIBLSF", "as_of_date": "2024-03-31", "holding_symbol": "NABIL", "holding_name": "Nabil Bank Limited", "units": 50000, "market_value": 6000000, "weight_percent": 12.5},
+    {"fund_code": "NIBLSF", "as_of_date": "2024-03-31", "holding_symbol": "NICA", "holding_name": "NIC Asia Bank", "units": 30000, "market_value": 4000000, "weight_percent": 8.3}
+  ]
+}
