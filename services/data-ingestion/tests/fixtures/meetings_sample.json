@@ -1,0 +1,6 @@
+{
+  "meetings": [
+    {"symbol": "NABIL", "meeting_type": "AGM", "meeting_date": "2024-03-20", "book_closure_date": "2024-03-01", "agenda": "Dividend approval; director election", "venue": "Kathmandu", "status": "announced"},
+    {"symbol": "NABIL", "meeting_type": "SGM", "meeting_date": "2024-04-10", "book_closure_date": "2024-03-25", "agenda": "Merger approval", "venue": "Kathmandu", "status": "announced"}
+  ]
+}

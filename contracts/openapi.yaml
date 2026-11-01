@@ -655,6 +655,28 @@ paths:
       responses:
         "200": { description: Calculated ratios }
 
+  /api/v1/public-issues:
+    get:
+      tags: [corporate_actions]
+      summary: Public issues (IPO/FPO/rights)
+      responses:
+        "200": { description: Public issues list }
+
+  /api/v1/mergers:
+    get:
+      tags: [corporate_actions]
+      summary: Mergers and acquisitions
+      responses:
+        "200": { description: Mergers list }
+
+  /api/v1/company-meetings:
+    get:
+      tags: [corporate_actions]
+      summary: AGM/SGM notices
+      responses:
+        "200": { description: Company meetings list }
+
+
   /api/v1/corporate-actions:
     get:
       tags: [corporate_actions]

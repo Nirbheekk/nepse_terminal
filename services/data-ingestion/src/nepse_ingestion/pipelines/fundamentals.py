@@ -26,7 +26,7 @@ def _run(session, source_slug, stream):
     job = IngestionJob(job_name=f"{stream}-import", source_slug=source_slug, status="running")
     session.add(job)
     session.flush()
-    run = IngestionRun(job_id=job.id, source_slug=source_slug, stream=stream, status="running")
+    run = IngestionRun(job_id=job.id, source_slug=source_slug, stream=stream, status="partial")
     session.add(run)
     session.flush()
     return job, run

@@ -1,0 +1,8 @@
+{
+  "actions": [
+    {"symbol": "NABIL", "action_type": "cash_dividend", "fiscal_year": "2023/2024", "announcement_date": "2024-01-10", "book_closure_date": "2024-02-15", "cash_percent": 20.0, "cash_amount": 20.0, "status": "announced"},
+    {"symbol": "NABIL", "action_type": "bonus_share", "fiscal_year": "2023/2024", "announcement_date": "2024-01-10", "book_closure_date": "2024-02-15", "bonus_percent": 10.0, "status": "announced"},
+    {"symbol": "NICA", "action_type": "rights_issue", "fiscal_year": "2023/2024", "announcement_date": "2024-02-01", "book_closure_date": "2024-03-01", "rights_ratio": 1.0, "rights_price": 100, "status": "announced"},
+    {"symbol": "SCB", "action_type": "stock_split", "fiscal_year": "2023/2024", "announcement_date": "2024-03-01", "book_closure_date": "2024-03-15", "split_from": 1, "split_to": 2, "status": "announced"}
+  ]
+}

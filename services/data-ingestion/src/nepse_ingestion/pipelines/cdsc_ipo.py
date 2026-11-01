@@ -79,7 +79,7 @@ def run_cdsc_ipo_pipeline(session: Session, raw_doc, *, job_name: str = "cdsc-ip
     session.add(job)
     session.flush()
 
-    run = IngestionRun(job_id=job.id, source_slug=raw_doc.source_slug, stream="public_issues", status="running")
+    run = IngestionRun(job_id=job.id, source_slug=raw_doc.source_slug, stream="public_issues", status="partial")
     session.add(run)
     session.flush()
 

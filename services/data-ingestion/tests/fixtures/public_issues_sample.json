@@ -1,0 +1,6 @@
+{
+  "issues": [
+    {"symbol": "NABIL", "issue_type": "IPO", "issue_name": "Nabil Bank IPO", "open_date": "2024-05-01", "close_date": "2024-05-05", "issue_price": 100, "units_offered": 1000000, "status": "announced"},
+    {"symbol": "NICA", "issue_type": "FPO", "issue_name": "NIC Asia FPO", "open_date": "2024-06-01", "close_date": "2024-06-05", "issue_price": 250.5, "units_offered": 500000, "status": "announced"}
+  ]
+}
