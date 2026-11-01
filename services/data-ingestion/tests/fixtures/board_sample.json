@@ -1,0 +1,6 @@
+{
+  "board": [
+    {"symbol": "NABIL", "company_name": "Nabil Bank Limited", "full_name": "Mr. A", "role": "Chairman", "designation": "Chairman", "appointment_date": "2023-01-01", "cessation_date": null, "is_independent": false},
+    {"symbol": "NABIL", "company_name": "Nabil Bank Limited", "full_name": "Ms. B", "role": "Director", "designation": "Independent Director", "appointment_date": "2023-06-15", "cessation_date": null, "is_independent": true}
+  ]
+}

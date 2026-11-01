@@ -15,13 +15,15 @@ func (s *Server) handleGetCompanyProfile(w http.ResponseWriter, r *http.Request)
 		badRequest(w, r, "missing company symbol")
 		return
 	}
-	profile, err := s.store.GetCompanyProfile(r.Context(), symbol)
-	if err != nil {
-		// Not found is acceptable: return empty profile placeholder.
-		OK(w, r, map[string]any{"symbol": symbol, "profile": nil, "available": false}, metaFrom(r))
-		return
-	}
-	OK(w, r, map[string]any{"symbol": symbol, "profile": profile, "available": true}, metaFrom(r))
+	profile, _ := s.store.GetCompanyProfile(r.Context(), symbol)
+	OK(w, r, map[string]any{
+		"symbol": symbol,
+		"profile": profile,
+		"available": profile != nil,
+		"source": "postgres",
+		"verification_status": map[bool]string{true: "PROVISIONAL", false: "UNVERIFIED"}[profile != nil],
+		"missing_data": profile == nil,
+	}, metaFrom(r))
 }
 
 func (s *Server) handleGetBoard(w http.ResponseWriter, r *http.Request) {
@@ -38,7 +40,7 @@ func (s *Server) handleGetBoard(w http.ResponseWriter, r *http.Request) {
 	if members == nil {
 		members = []repositories.BoardMember{}
 	}
-	OK(w, r, map[string]any{"symbol": symbol, "members": members}, metaFrom(r))
+	OK(w, r, map[string]any{"symbol": symbol, "members": members, "source": "postgres", "verification_status": "PROVISIONAL", "missing_data": len(members) == 0}, metaFrom(r))
 }
 
 func (s *Server) handleGetOwnership(w http.ResponseWriter, r *http.Request) {
@@ -55,7 +57,7 @@ func (s *Server) handleGetOwnership(w http.ResponseWriter, r *http.Request) {
 	if snaps == nil {
 		snaps = []repositories.OwnershipSnapshot{}
 	}
-	OK(w, r, map[string]any{"symbol": symbol, "snapshots": snaps}, metaFrom(r))
+	OK(w, r, map[string]any{"symbol": symbol, "snapshots": snaps, "source": "postgres", "verification_status": "PROVISIONAL", "missing_data": len(snaps) == 0}, metaFrom(r))
 }
 
 func (s *Server) handleListMutualFunds(w http.ResponseWriter, r *http.Request) {

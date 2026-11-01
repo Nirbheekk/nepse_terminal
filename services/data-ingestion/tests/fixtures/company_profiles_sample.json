@@ -1,0 +1,6 @@
+{
+  "profiles": [
+    {"symbol": "NABIL", "company_name": "Nabil Bank Limited", "sector": "Commercial Banks", "website": "https://nabilbank.com", "paid_up_capital": 26000000000, "listed_shares": 260000000, "incorporation_date": "1984-07-12", "listed_date": "1994-10-01", "fiscal_year_end": "Asadh", "status": "active"},
+    {"symbol": "NICA", "company_name": "NIC Asia Bank Limited", "sector": "Commercial Banks", "website": "https://nicasiabank.com", "paid_up_capital": 18000000000, "listed_shares": 180000000, "status": "active"}
+  ]
+}
