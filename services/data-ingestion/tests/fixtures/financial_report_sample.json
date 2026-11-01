@@ -1,0 +1,27 @@
+{
+  "reports": [
+    {
+      "symbol": "NABIL",
+      "report_type": "quarterly",
+      "fiscal_year": "2023/2024",
+      "period_type": "Q3",
+      "period_start": "2024-01-01",
+      "period_end": "2024-03-31",
+      "filing_date": "2024-04-20",
+      "publication_date": "2024-04-22",
+      "audit_status": "unaudited",
+      "scope": "standalone",
+      "currency": "NPR",
+      "original_units": "NPR thousands",
+      "normalized_units": "NPR",
+      "facts": [
+        {"label": "Total Assets", "statement_type": "balance_sheet", "amount": 300000, "unit": "NPR thousands"},
+        {"label": "Total Liabilities", "statement_type": "balance_sheet", "amount": 260000, "unit": "NPR thousands"},
+        {"label": "Total Equity", "statement_type": "balance_sheet", "amount": 40000, "unit": "NPR thousands"},
+        {"label": "Revenue", "statement_type": "income_statement", "amount": 5000, "unit": "NPR thousands"},
+        {"label": "Net Profit", "statement_type": "income_statement", "amount": 1200, "unit": "NPR thousands"},
+        {"label": "Shares Outstanding", "statement_type": "income_statement", "amount": 10000, "unit": "shares"}
+      ]
+    }
+  ]
+}

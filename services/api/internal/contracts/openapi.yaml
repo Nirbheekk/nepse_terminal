@@ -637,6 +637,25 @@ paths:
       responses:
         "201": { description: Ingested and validated }
 
+  /api/v1/financial-reports:
+    get:
+      tags: [financials]
+      summary: Registered financial reports
+      parameters:
+        - name: symbol
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { description: Financial reports list }
+
+  /api/v1/data/financial-coverage:
+    get:
+      tags: [data]
+      summary: Financial data coverage
+      responses:
+        "200": { description: Coverage counts }
+
+
   /api/v1/companies/{symbol}/ratios:
     get:
       tags: [financials]

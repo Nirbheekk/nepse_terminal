@@ -113,6 +113,8 @@ func (s *Server) Handler() http.Handler {
 		r.Post("/companies/{symbol}/corporate-actions", s.handlePostCorporateAction)
 		r.Get("/companies/{symbol}/adjusted-prices", s.handleGetAdjustedPrices)
 		r.Get("/corporate-actions", s.handleGetCorporateActions)
+		r.Get("/financial-reports", s.handleListFinancialReports)
+		r.Get("/data/financial-coverage", s.handleFinancialCoverage)
 		r.Get("/public-issues", s.handleListPublicIssues)
 		r.Get("/mergers", s.handleListMergers)
 		r.Get("/company-meetings", s.handleListCompanyMeetings)
