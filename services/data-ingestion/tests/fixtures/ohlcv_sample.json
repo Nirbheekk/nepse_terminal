@@ -1,0 +1,6 @@
+{
+  "bars": [
+    {"symbol": "NABIL", "trading_date": "2024-01-15", "open": 1000, "high": 1050, "low": 990, "close": 1020, "volume": 5000, "turnover": 5100000, "transactions": 120},
+    {"symbol": "NABIL", "trading_date": "2024-01-16", "open": 1020, "high": 1030, "low": 1010, "close": 1025, "volume": 4000, "turnover": 4100000, "transactions": 90}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "funds": [
     {"fund_code": "NIBLSF", "fund_name": "NIBL Samriddhi Fund", "manager": "NIBL Capital", "fund_type": "open_ended", "currency": "NPR", "status": "active"},
-    {"fund_code": "NIBLPF", "fund_name": "NIBL Pragati Fund", "manager": "NIBL Capital", "fund_type": "close_ended", "currency": "NPR", "status": "active"}
+    {"fund_code": "NIBLPF", "fund_name": "NIBL Pragati Fund", "manager": "NIBL Capital", "fund_type": "closed_ended", "currency": "NPR", "status": "active"}
   ]
 }

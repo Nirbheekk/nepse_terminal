@@ -51,6 +51,8 @@ class MutualFundProfileAdapter(SourceAdapter):
             r["fund_name"] = clean_text(r.get("fund_name", ""))
             r["manager"] = clean_text(r.get("manager", ""))
             r["fund_type"] = r.get("fund_type", "open_ended")
+            if r["fund_type"] == "close_ended":
+                r["fund_type"] = "closed_ended"
             r["launch_date"] = parse_date(r.get("launch_date"))
             r["maturity_date"] = parse_date(r.get("maturity_date"))
             r["outstanding_units"] = parse_decimal(r.get("outstanding_units"))
