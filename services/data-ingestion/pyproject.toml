@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nepse-ingestion"
+version = "0.1.0"
+description = "NEPSE fundamental data ingestion foundation (Batch 4.3)"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31",
+  "beautifulsoup4>=4.12",
+  "lxml>=5.0",
+  "pdfplumber>=0.11",
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "SQLAlchemy>=2.0",
+  "psycopg[binary]>=3.1",
+  "pydantic>=2.0",
+  "typer>=0.12",
+  "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+
+[project.scripts]
+nepse-ingest = "nepse_ingestion.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

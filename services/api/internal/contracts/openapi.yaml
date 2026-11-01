@@ -691,6 +691,76 @@ paths:
       responses:
         "201": { description: Corporate action created }
 
+  /api/v1/companies/{symbol}/profile:
+    get:
+      tags: [fundamentals]
+      summary: Company profile (extended)
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: Company profile }
+
+  /api/v1/companies/{symbol}/board:
+    get:
+      tags: [fundamentals]
+      summary: Board members and appointments
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: Board members }
+
+  /api/v1/companies/{symbol}/ownership:
+    get:
+      tags: [fundamentals]
+      summary: Ownership snapshots
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200": { description: Ownership snapshots }
+
+  /api/v1/mutual-funds:
+    get:
+      tags: [mutual_funds]
+      summary: List mutual funds
+      responses:
+        "200": { description: Mutual funds list }
+
+  /api/v1/mutual-funds/{id}/nav:
+    get:
+      tags: [mutual_funds]
+      summary: NAV history for a fund
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200": { description: NAV history }
+
+  /api/v1/data/coverage:
+    get:
+      tags: [data]
+      summary: Data coverage counts
+      responses:
+        "200": { description: Coverage counts }
+
+  /api/v1/data/freshness:
+    get:
+      tags: [data]
+      summary: Data freshness
+      responses:
+        "200": { description: Freshness report }
+
+
   /api/v1/companies/{symbol}/adjusted-prices:
     get:
       tags: [corporate_actions]

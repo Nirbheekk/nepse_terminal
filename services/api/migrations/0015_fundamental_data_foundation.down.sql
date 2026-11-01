@@ -1,0 +1,26 @@
+-- 0015_fundamental_data_foundation down: drop additive tables.
+DROP TABLE IF EXISTS entity_resolution_reviews;
+DROP TABLE IF EXISTS data_quality_findings;
+DROP TABLE IF EXISTS ingestion_errors;
+DROP TABLE IF EXISTS ingestion_runs;
+DROP TABLE IF EXISTS ingestion_jobs;
+DROP TABLE IF EXISTS source_documents;
+DROP TABLE IF EXISTS mutual_fund_portfolio_disclosures;
+DROP TABLE IF EXISTS mutual_fund_nav_history;
+DROP TABLE IF EXISTS mutual_fund_schemes;
+DROP TABLE IF EXISTS mutual_funds;
+DROP TABLE IF EXISTS financial_report_documents;
+DROP TABLE IF EXISTS financial_ratio_observations;
+DROP TABLE IF EXISTS financial_metric_definitions;
+DROP TABLE IF EXISTS financial_statement_facts;
+DROP TABLE IF EXISTS financial_reports;
+DROP TABLE IF EXISTS merger_participants;
+DROP TABLE IF EXISTS merger_events;
+DROP TABLE IF EXISTS company_meetings;
+DROP TABLE IF EXISTS public_issue_updates;
+DROP TABLE IF EXISTS public_issues;
+DROP TABLE IF EXISTS ownership_snapshots;
+DROP TABLE IF EXISTS company_director_appointments;
+DROP TABLE IF EXISTS company_directors;
+DROP TABLE IF EXISTS company_identifiers;
+DROP TABLE IF EXISTS company_profiles;
