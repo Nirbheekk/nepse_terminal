@@ -139,7 +139,7 @@ export function FinancialChart({ symbol, initialBars }: FinancialChartProps) {
   useEffect(() => {
     const fetchLayouts = async () => {
       try {
-        const res = await fetch("/api/v1/charts/layouts");
+        const res = await fetch(`${API_BASE}/api/v1/charts/layouts`);
         if (res.ok) {
           const json = await res.json();
           if (json.data) setLayouts(json.data);
@@ -163,7 +163,7 @@ export function FinancialChart({ symbol, initialBars }: FinancialChartProps) {
         indicators: activeIndicators,
         settings: {},
       };
-      const res = await fetch("/api/v1/charts/layouts", {
+      const res = await fetch(`${API_BASE}/api/v1/charts/layouts`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
