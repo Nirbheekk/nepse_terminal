@@ -136,7 +136,11 @@ function parseEnvelope<T extends z.ZodTypeAny>(
       requestId,
     );
   }
-  const payload = parsed.data as any;
+  const payload = parsed.data as {
+    data: z.infer<T> | null;
+    meta: Meta;
+    error: { code: string; message: string; retryable: boolean } | null | undefined;
+  };
   if (payload.error) {
     throw new ApiError(
       payload.error.message,
