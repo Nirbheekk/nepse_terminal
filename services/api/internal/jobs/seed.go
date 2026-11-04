@@ -26,6 +26,7 @@ import (
 	"strings"
 	"time"
 
+	nepse "nepse/terminal/api/internal/securityclass"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
@@ -313,6 +314,32 @@ func ensureSectors(ctx context.Context, pool *pgxPool, companies []companyRecord
 	}
 	return ids, len(ids), nil
 }
+func mapCompanyInstrument(instrumentType, securityName string) (string, string, error) {
+	instrumentType = strings.TrimSpace(strings.ToLower(instrumentType))
+	securityName = strings.TrimSpace(securityName)
+
+	switch {
+	case instrumentType == "equity":
+		companyInstrument := "equity"
+		securityType := nepse.Classify(securityName)
+		return companyInstrument, securityType, nil
+	case instrumentType == "mutual funds":
+		companyInstrument := "mutual funds"
+		securityType := "mutual_fund"
+		return companyInstrument, securityType, nil
+	case instrumentType == "non-convertible debentures":
+		companyInstrument := "non-convertible debentures"
+		securityType := "debenture"
+		return companyInstrument, securityType, nil
+	case instrumentType == "preference shares":
+		companyInstrument := "preference shares"
+		securityType := "preference"
+		return companyInstrument, securityType, nil
+	default:
+		return "", "", fmt.Errorf("unknown instrument type %q for symbol %q", instrumentType, securityName)
+companyInstrument, securityType, err := mapCompanyInstrument(instrument, strings.TrimSpace(c.SecurityName))
+	}
+}
 
 func ensureCompanies(ctx context.Context, pool *pgxPool, companies []companyRecord, sectorIDs map[string]string) (map[string]string, map[string]string, int, error) {
 	companyIDs := make(map[string]string, len(companies))
@@ -360,8 +387,8 @@ func ensureCompanies(ctx context.Context, pool *pgxPool, companies []companyReco
 		var secID string
 		if err := pool.QueryRow(ctx, `
 			INSERT INTO securities (company_id, symbol, security_type)
-			VALUES ($1::uuid, $2, 'ordinary')
-			ON CONFLICT (symbol) DO UPDATE SET company_id = EXCLUDED.company_id
+			VALUES ($1::uuid, $2, securityType)
+			ON CONFLICT (symbol) DO UPDATE SET company_id = EXCLUDED.company_id, security_type = EXCLUDED.security_type
 			RETURNING id::text`, companyID, sym).Scan(&secID); err != nil {
 			return nil, nil, 0, fmt.Errorf("%s security: %w", sym, err)
 		}
@@ -427,25 +454,48 @@ type detailFile struct {
 
 // loadCompanyDetails reads one file per symbol. Files are written by the legacy
 // collector, so a partially written or absent file is expected and skipped.
+
+// loadCompanyDetails recursively reads one file per symbol.
+// Nested directory paths are preserved as slash-separated symbols.
 func loadCompanyDetails(dataDir string) ([]barRow, error) {
-	pattern := filepath.Join(dataDir, "company_details", "*.json")
-	files, err := filepath.Glob(pattern)
-	if err != nil {
-		return nil, err
-	}
-	out := make([]barRow, 0, len(files))
-	for _, f := range files {
-		base := strings.TrimSuffix(filepath.Base(f), ".json")
-		if strings.HasSuffix(base, "_extras") {
-			continue
+	root := filepath.Join(dataDir, "company_details")
+	out := make([]barRow, 0, 440)
+
+	err := filepath.WalkDir(root, func(path string, entry os.DirEntry, walkErr error) error {
+		if walkErr != nil {
+			return walkErr
 		}
+
+		if entry.IsDir() {
+			return nil
+		}
+
+		if !strings.EqualFold(filepath.Ext(entry.Name()), ".json") {
+			return nil
+		}
+
+		rel, err := filepath.Rel(root, path)
+		if err != nil {
+			return err
+		}
+
+		// Preserve nested symbols, e.g. GBILD84/85.json.
+		symbol := strings.TrimSuffix(filepath.ToSlash(rel), filepath.Ext(rel))
+		symbol = strings.ToUpper(strings.TrimSpace(symbol))
+
+		if symbol == "" || strings.HasSuffix(symbol, "_EXTRAS") {
+			return nil
+		}
+
 		var df detailFile
-		if err := readJSONFile(f, &df); err != nil {
-			continue // a truncated snapshot is not a reason to abort the load
+		if err := readJSONFile(path, &df); err != nil {
+			// Preserve existing behavior: skip incomplete snapshots.
+			return nil
 		}
+
 		q := df.Details.Quote
 		row := barRow{
-			Symbol:        strings.ToUpper(base),
+			Symbol:        symbol,
 			Date:          normalizeDate(q.BusinessDate),
 			Open:          q.OpenPrice,
 			High:          q.HighPrice,
@@ -457,27 +507,42 @@ func loadCompanyDetails(dataDir string) ([]barRow, error) {
 			PublicShares:  df.Details.PublicShares,
 			MarketCap:     df.Details.MarketCap,
 		}
+
 		if q.LastTradedPrice != nil {
 			row.Close = *q.LastTradedPrice
 		}
-		if q.OpenPrice == nil && q.HighPrice == nil && q.LowPrice == nil && q.LastTradedPrice == nil {
-			continue
+
+		if q.OpenPrice == nil &&
+			q.HighPrice == nil &&
+			q.LowPrice == nil &&
+			q.LastTradedPrice == nil {
+			return nil
 		}
+
 		row.HasQuote = true
+
 		if row.Close == 0 {
-			// A suspended scrip reports zero trades but still has an open price.
+			// A suspended scrip may report zero trades but retain an open price.
 			if row.Open != nil {
 				row.Close = *row.Open
 			} else {
-				continue
+				return nil
 			}
 		}
-		// Turnover is deliberately left nil here. It is not reported per security by
-		// the snapshot, and estimating it as volume x close produced a number that
-		// disagreed with the exchange's own total. The ingester fills it from the
-		// captured contracts instead.
+
+		// Turnover is deliberately left nil. It is not reported per security
+		// in this snapshot and must not be estimated as volume multiplied by close.
 		out = append(out, row)
+		return nil
+	})
+
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil, nil
+		}
+		return nil, fmt.Errorf("walk company details: %w", err)
 	}
+
 	return out, nil
 }
 
@@ -1214,18 +1279,28 @@ func parseTimestamp(s string) *time.Time {
 	if s == "" {
 		return nil
 	}
+
+	// RFC3339 timestamps already contain their timezone.
+	// Preserve the represented instant; do not apply NPT again.
+	if t, err := time.Parse(time.RFC3339Nano, s); err == nil {
+		t = t.UTC()
+		return &t
+	}
+
+	// These formats contain Nepal local wall-clock time without
+	// an explicit timezone. Interpret them as NPT (UTC+05:45).
 	for _, layout := range []string{
-		"2006-01-02 15:04:05.999999", "2006-01-02 15:04:05", time.RFC3339Nano, time.RFC3339,
+		"2006-01-02 15:04:05.999999",
+		"2006-01-02 15:04:05",
 		"2006-01-02T15:04:05.999999",
+		"2006-01-02T15:04:05",
 	} {
 		if t, err := time.Parse(layout, s); err == nil {
-			// Captured wall-clock times are NPT (UTC+05:45) with no offset.
-			t = time.Date(t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second(), t.Nanosecond(), time.UTC)
-			off := 5*time.Hour + 45*time.Minute
-			t = t.Add(-off)
+			t = t.UTC().Add(-(5*time.Hour + 45*time.Minute))
 			return &t
 		}
 	}
+
 	return nil
 }
 
